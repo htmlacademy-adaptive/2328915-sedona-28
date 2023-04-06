@@ -47,19 +47,29 @@
           <form class="feedback__form form" action="#" method="post">
             <fieldset class="form__info-user info-user">
               <legend class="info-user__title">Представьтесь:</legend>
-              <label class="info-user__name" for="username">Имя*:</label>
-              <input class="info-user__name-user" type="text" id="username" name="username" value="Петр" placeholder="Введите имя:" required>
-              <label class="info-user__surname" for="surname">Фамилия*:</label>
-              <input class="info-user__surname-user" type="text" id="surname" name="surname" value="Пустота" placeholder="Введите фамилию:" required>
-              <label class="info-user__patronymic" for="patronymic">Отчество*:</label>
-              <input class="info-user__patronymic-user" type="text" id="patronymic" name="patronymic" value="Викторович" placeholder="Введите отчество:" required>
+              <div class="info-user__wrapper">
+                <label class="info-user__name" for="username">Имя*:</label>
+                <input class="info-user__name-user" type="text" id="username" name="username" value="Петр" placeholder="Введите имя:" required>
+              </div>
+              <div class="info-user__wrapper">
+                <label class="info-user__surname" for="surname">Фамилия*:</label>
+                <input class="info-user__surname-user" type="text" id="surname" name="surname" value="Пустота" placeholder="Введите фамилию:" required>
+              </div>
+              <div class="info-user__wrapper">
+                <label class="info-user__patronymic" for="patronymic">Отчество*:</label>
+                <input class="info-user__patronymic-user" type="text" id="patronymic" name="patronymic" value="Викторович" placeholder="Введите отчество:" required>
+              </div>
             </fieldset>
             <fieldset class="form__info-contacts info-contacts">
               <legend class="info-contacts__title">Контактная информация:</legend>
-              <label class="info-contacts__number" for="number">Контактный телефон*:</label>
-              <input class="info-contacts__number-user" id="number" type="tel" placeholder="Введите телефон" required>
-              <label class="info-contacts__email" for="email">Электронная почта*:</label>
-              <input class="info-contacts__email-user" id="email" type="email" placeholder="Введите e-mail" required>
+              <div class="info-contacts__wrapper">
+                <label class="info-contacts__number" for="number">Контактный телефон*:</label>
+                <input class="info-contacts__number-user" id="number" type="tel" placeholder="Введите телефон" required>
+              </div>
+              <div class="info-contacts__wrapper">
+                <label class="info-contacts__email" for="email">Электронная почта*:</label>
+                <input class="info-contacts__email-user" id="email" type="email" placeholder="Введите e-mail" required>
+              </div>
             </fieldset>
             <fieldset class="form__info-impression info-impression">
               <legend class="info-impression__title">Ваше общее впечатление:</legend>
@@ -115,7 +125,8 @@
             </fieldset>
             <fieldset class="form__info-emotion info-emotion">
               <legend class="info-emotion__title">Опишите свои эмоции:</legend>
-              <textarea class="info-emotion__data" placeholder="Опишите подробно все свои восторги"></textarea>
+              <label class="info-emotion__label" for="textarea"></label>
+              <textarea class="info-emotion__data" id = "textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="form__button" type="submit">Отправить отзыв</button>
             <small>* — обязательные поля</small>
