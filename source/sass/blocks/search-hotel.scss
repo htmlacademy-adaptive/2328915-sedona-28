@@ -1,0 +1,18 @@
+@import "../bootstrap.scss";
+
+.search-hotel__wrapper {
+  padding: 38px 18px 49px;
+}
+
+.search-hotel__title {
+  @include bold-text;
+}
+
+.search-hotel__description {
+  @include normal-text;
+  text-transform: uppercase;
+}
+
+.search-hotel__button {
+  text-decoration: none;
+}

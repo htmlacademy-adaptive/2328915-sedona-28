@@ -1,0 +1,67 @@
+@import "../bootstrap.scss";
+
+.form__fieldset {
+  @include reset-indents;
+  border: 0;
+}
+
+.form__title {
+  @include bold-text;
+}
+
+.form__label {
+  @include normal-text;
+  text-transform: uppercase;
+}
+
+.form__input::placeholder {
+  @include bold-text;
+  text-transform: capitalize;
+
+  &__input-number::placeholder,
+  &__input-email::placeholder {
+    @include bold-text;
+    text-transform: initial;
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form__list {
+  @include reset-indents;
+}
+
+.form__item {
+  @include list-reset;
+}
+
+.form__option {
+  @include bold-text;
+  text-transform: initial;
+}
+
+.form__textarea {
+  background-color: #f2f2f2;
+  width: 279px;
+  min-height: 150px;
+  border: 0;
+  resize: none;
+
+
+  &__textarea::placeholder {
+    @include bold-text;
+    text-align: left;
+    text-transform: initial;
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding: 0;
+}
+
+.form__small-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}

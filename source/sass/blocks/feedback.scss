@@ -1,0 +1,18 @@
+@import "../bootstrap.scss";
+
+.feedback__wrapper {
+  padding: 36px 20px 28px;
+}
+
+.feedback__title {
+  @include bold-text;
+}
+
+.feedback__description {
+  @include normal-text;
+  text-transform: uppercase;
+}
+
+.feedback__form {
+  padding: 24px 20px 22px;
+}

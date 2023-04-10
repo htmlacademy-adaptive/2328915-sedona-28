@@ -1,0 +1,22 @@
+@import "../bootstrap.scss";
+
+
+.main-footer__wrapper {
+  padding: 33px 82px;
+}
+
+.main-footer__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-footer__description {
+  @include normal-text;
+}
+
+.main-footer__copyright {
+  padding: 30px 0;
+}

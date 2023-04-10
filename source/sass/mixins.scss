@@ -1,0 +1,31 @@
+@import url("./bootstrap.scss");
+
+@mixin bold-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+@mixin normal-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: $basic-color;
+}
+
+@mixin reset-indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

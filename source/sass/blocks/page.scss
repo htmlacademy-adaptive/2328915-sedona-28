@@ -1,0 +1,7 @@
+@import "../bootstrap.scss";
+
+.page__body {
+  @include normal-text;
+
+  margin: 100px;
+}

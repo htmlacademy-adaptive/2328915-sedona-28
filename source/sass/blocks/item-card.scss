@@ -1,0 +1,15 @@
+@import "../bootstrap.scss";
+
+.item-card__title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.item-card__author {
+  @include normal-text;
+  font-style: normal;
+}
+
+.item-card__count {
+  font-weight: 700;
+}

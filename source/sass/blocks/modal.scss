@@ -1,0 +1,19 @@
+@import "../bootstrap.scss";
+
+.modal__wrapper {
+  padding: 45px 42px 35px;
+}
+
+.modal__title {
+  @include bold-text;
+}
+
+.modal__description {
+  @include normal-text;
+  text-transform: uppercase;
+}
+
+.modal__wrapper-btn {
+  height: 98px;
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,19 @@
+@import "../bootstrap.scss";
+
+.reasons__list {
+  @include reset-indents;
+  padding: 23px 18px 46px;
+}
+
+.reasons__item {
+  @include list-reset;
+}
+
+.reasons__title {
+  @include bold-text;
+}
+
+.reasons__description {
+  @include normal-text;
+  text-transform: uppercase;
+}

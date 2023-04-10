@@ -1,0 +1,10 @@
+@import "../bootstrap.scss";
+
+.social__list {
+  @include reset-indents;
+}
+
+.social__item {
+  @include list-reset;
+  background-color: $blue-color;
+}

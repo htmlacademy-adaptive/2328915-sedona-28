@@ -1,0 +1,49 @@
+@import "../bootstrap.scss";
+
+
+.advantages__container {
+  padding: 32px 18px 32px;
+}
+
+.advantages__container-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages__title {
+  @include bold-text;
+  margin: 0;
+}
+
+.advantages__description {
+  @include normal-text;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages__list {
+  @include reset-indents;
+}
+
+.advantages__item {
+  @include list-reset;
+}
+
+.advantages__wrapper {
+  background-color: $gray-color;
+  padding: 24px 18px 28px;
+
+  &--color {
+    background-color: $blue-color;
+    padding: 37px 18px 37px;
+  }
+
+  &--color &__title,
+  &--color &__number,
+  &--color &__description {
+    color: $white-color;
+  }
+}

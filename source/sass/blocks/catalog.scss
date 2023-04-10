@@ -1,0 +1,23 @@
+@import "../bootstrap.scss";
+
+.catalog__wrapper {
+  padding: 37px 20px 25px;
+}
+
+.catalog__title {
+  @include bold-text;
+}
+
+.catalog__description {
+  @include normal-text;
+  text-transform: uppercase;
+}
+
+.catalog__list-card {
+  @include reset-indents;
+}
+
+.catalog__item-card {
+  @include list-reset;
+  padding: 25px 20px;
+}

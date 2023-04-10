@@ -1,0 +1,14 @@
+@import "../bootstrap.scss";
+
+
+.video-prs__doubt {
+  padding: 17px 28px 38px;
+}
+
+.video-prs__title {
+  @include bold-text;
+}
+
+.video-prs__description {
+  text-transform: uppercase;
+}
