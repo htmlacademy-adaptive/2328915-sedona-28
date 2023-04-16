@@ -12,3 +12,13 @@
 .video-prs__description {
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-param) {
+  .video-prs__doubt {
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

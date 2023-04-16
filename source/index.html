@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body class="page__body">
-    <div class="container">
+    <div class="container container__center">
       <header class="main-header">
         <a class="main-header__logo">
           <img src="./img/logo-phone.svg" width="185" height="96">
@@ -20,14 +21,14 @@
           <ul class="main-nav__list">
             <h2 class="visually-hidden">Меню.</h2>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Главная</a>
+              <a class="main-nav__link main-nav__link--active">Главная</a>
               <span class="visually-hidden">Закрыть.</span>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Фото и видео</a>
+              <a href="./catalog.html" class="main-nav__link">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Форма отзыва</a>
+              <a href="./form.html" class="main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Html academy</a>
@@ -38,59 +39,59 @@
 
       <main class="main-container">
         <section class="hero">
-          <img class="hero__welcome" src="img/hero-text.svg" alt="Добро пожаловать в Седону." width="458" height="352">
+          <img class="hero__welcome" src="img/hero-text.svg" alt="Добро пожаловать в Седону." width="282" height="214">
         </section>
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества.</h2>
           <div class="advantages__container">
-            <h2 class="advantages__container-title">Седона — небольшой городок в аризоне, заслуживающий большего!</h2>
+            <h2 class="advantages__container-title">Седона — небольшой городок в аризоне, <br> заслуживающий большего!</h2>
             <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
           <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__wrapper advantages__wrapper--color">
+            <li class="advantages__item advantages__item--color">
+              <div class="advantages__wrapper">
                 <h2 class="advantages__title">Настоящий городок</h2>
                 <span class="advantages__number">— №1 —</span>
                 <p class="advantages__description">не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="advantages__image">
-                <img src="./img/advantage1.jpg" alt="локация Седоны." width="520" height="260">
-              </div>
-              <div class="reasons">
-                <ul class="reasons__list">
-                  <li class="reasons__item reasons__item--home">
-                    <div class="reasons__image">
-                      <img src="./img/icon-house.svg" alt="Иконка дома." width="39" height="37">
-                    </div>
-                    <div class="reasons__wrapper">
-                      <h2 class="reasons__title">Жилье</h2>
-                      <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                    </div>
-                  </li>
-                  <li class="reasons__item reasons__item--food">
-                    <div class="reasons__image">
-                      <img src="./img/icon-burger.svg" alt="Иконка бургера." width="40" height="35">
-                    </div>
-                    <div class="reasons__wrapper">
-                      <h2 class="reasons__title">Еда</h2>
-                      <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                    </div>
-                  </li>
-                  <li class="reasons__item reasons__item--present">
-                    <div class="reasons__image">
-                      <img src="./img/icon-present.svg" alt="Иконка подарка." width="32" height="38">
-                    </div>
-                    <div class="reasons__wrapper">
-                      <h2 class="reasons__title">Сувениры</h2>
-                      <p class="reasons__description">Не только китайского, но и местного производства!</p>
-                    </div>
-                  </li>
-                </ul>
+                <img src="./img/advantage1.jpg" alt="локация Седоны." width="512" height="256">
               </div>
             </li>
-            <li class="advantages__item">
-              <div class="advantages__wrapper advantages__wrapper--color">
+            <li class="reasons">
+              <ul class="reasons-list">
+                <li class="reasons__item reasons__item--home">
+                  <div class="reasons__image">
+                    <img src="./img/icon-house.svg" alt="Иконка дома." width="39" height="37">
+                  </div>
+                  <div class="reasons__wrapper">
+                    <h2 class="reasons__title">Жилье</h2>
+                    <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
+                </li>
+                <li class="reasons__item reasons__item--food">
+                  <div class="reasons__image">
+                    <img src="./img/icon-burger.svg" alt="Иконка бургера." width="40" height="35">
+                  </div>
+                  <div class="reasons__wrapper">
+                    <h2 class="reasons__title">Еда</h2>
+                    <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                </li>
+                <li class="reasons__item reasons__item--present">
+                  <div class="reasons__image">
+                    <img src="./img/icon-present.svg" alt="Иконка подарка." width="32" height="38">
+                  </div>
+                  <div class="reasons__wrapper">
+                    <h2 class="reasons__title">Сувениры</h2>
+                    <p class="reasons__description">Не только китайского, но и местного производства!</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="advantages__item advantages__item--color">
+              <div class="advantages__wrapper">
                 <h2 class="advantages__title">Там есть мост дьявола</h2>
                 <span class="advantages__number">— №2 —</span>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -100,24 +101,22 @@
               </div>
             </li>
             <li class="advantages__item">
-              <div class="advantages__wrapper">
-                <h2 class="advantages__title">Небольшая площадь</h2>
-                <span class="advantages__number">— №3 —</span>
-                <p class="advantages__description">Вcе интересные места находятся очень близко</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__wrapper">
-                <h2 class="advantages__title">Красивая дорога</h2>
-                <span class="advantages__number">— №4 —</span>
-                <p class="advantages__description">Ехать в сторону Лас-Вегаса совсем не скучно!</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__wrapper">
-                <h2 class="advantages__title">Мало туристов</h2>
-                <span class="advantages__number">— №5 —</span>
-                <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+              <div class="advantages__item-wrapper">
+                <div class="advantages__wrapper">
+                  <h2 class="advantages__title">Небольшая площадь</h2>
+                  <span class="advantages__number">— №3 —</span>
+                  <p class="advantages__description">Вcе интересные места находятся очень близко</p>
+                </div>
+                <div class="advantages__wrapper">
+                  <h2 class="advantages__title">Красивая дорога</h2>
+                  <span class="advantages__number">— №4 —</span>
+                  <p class="advantages__description">Ехать в сторону Лас-Вегаса совсем не скучно!</p>
+                </div>
+                <div class="advantages__wrapper">
+                  <h2 class="advantages__title">Мало туристов</h2>
+                  <span class="advantages__number">— №5 —</span>
+                  <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -125,7 +124,7 @@
         <section class="search-hotel search-hotel__wrapper">
           <h2 class="visually-hidden">Поиск гостиницы.</h2>
           <h2 class="search-hotel__title">Заинтересовались?</h2>
-          <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="search-hotel__button button" href="#">Найти гостиницу</a>
         </section>
         <section class="sedona-map">

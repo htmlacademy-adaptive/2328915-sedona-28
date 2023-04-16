@@ -1,2 +1,33 @@
 
-// от линтера
+@import "../bootstrap.scss";
+
+.main-header {
+  display: flex;
+  position: relative;
+  min-height: 56px;
+}
+
+.main-header__logo {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  // display: none;
+}
+
+
+@media (min-width: $tablet-param) {
+  .main-header__logo {
+    width: 185px;
+    height: 95px;
+  }
+}
+
+// .main-header__logo {
+//   @media (min-width: 768px) {
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//   }
+// }

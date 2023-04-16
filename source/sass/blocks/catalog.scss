@@ -1,7 +1,7 @@
 @import "../bootstrap.scss";
 
 .catalog__wrapper {
-  padding: 37px 20px 25px;
+  padding: 37px 0 25px;
 }
 
 .catalog__title {
@@ -19,5 +19,34 @@
 
 .catalog__item-card {
   @include list-reset;
-  padding: 25px 20px;
+  // padding: 25px 20px;
+}
+
+@media (min-width: $tablet-param) {
+  .catalog__wrap {
+    padding: 0 60px;
+  }
+
+  .catalog__wrapper {
+    margin: 0 auto;
+    width: 458px;
+    min-height: 200px;
+  }
+
+  .catalog__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .catalog__list-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .catalog__item-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

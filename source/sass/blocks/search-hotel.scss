@@ -16,3 +16,13 @@
 .search-hotel__button {
   text-decoration: none;
 }
+
+@media (min-width: $tablet-param) {
+  .search-hotel__wrapper {
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

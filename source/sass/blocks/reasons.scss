@@ -1,8 +1,8 @@
 @import "../bootstrap.scss";
 
-.reasons__list {
+.reasons-list {
   @include reset-indents;
-  padding: 23px 18px 46px;
+  // padding: 23px 18px 46px;
 }
 
 .reasons__item {
@@ -16,4 +16,32 @@
 .reasons__description {
   @include normal-text;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-param) {
+  .reasons {
+    @include list-reset;
+  }
+
+  .reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .reasons__item {
+    justify-content: center;
+    width: 33%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+
+    min-width: 256px;
+    min-height: 330px;
+  }
+
+  .reasons__wrapper {
+    margin: 0 auto;
+    width: 190px;
+  }
 }

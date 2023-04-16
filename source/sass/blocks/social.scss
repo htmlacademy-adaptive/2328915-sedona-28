@@ -2,9 +2,34 @@
 
 .social__list {
   @include reset-indents;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  min-width: 156px;
 }
 
 .social__item {
   @include list-reset;
   background-color: $blue-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+}
+
+@media (min-width: $tablet-param) {
+  .social__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-width: 156px;
+  }
+
+  .social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

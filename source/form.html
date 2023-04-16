@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body class="page__body">
-    <div class="container">
+    <div class="container container__center">
       <header class="main-header">
         <a class="main-header__logo">
           <img src="./img/logo-phone.svg" width="185" height="96">
@@ -19,14 +20,14 @@
           <ul class="main-nav__list">
             <h2 class="visually-hidden">Меню.</h2>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Главная</a>
+              <a href="./index.html" class="main-nav__link">Главная</a>
               <span class="visually-hidden">Закрыть.</span>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Фото и видео</a>
+              <a href="./catalog.html" class="main-nav__link">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Форма отзыва</a>
+              <a class="main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Html academy</a>
@@ -39,11 +40,11 @@
         <section class="hero-another">
           <img class="hero__welcome" src="./img/sedona-form-hero.svg" alt="Седона." width="229" height="39">
         </section>
-        <section class="feedback">
+        <section class="feedback feedback__indents">
           <h2 class="visually-hidden">Форма отзыва.</h2>
           <div class="feedback__wrapper">
             <h2 class="feedback__title">Оставьте свой отзыв</h2>
-            <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, <br> а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="feedback__form form" action="#" method="post">
             <fieldset class="form__fieldset">
@@ -65,38 +66,38 @@
               <legend class="form__title">Контактная информация:</legend>
               <div class="form__wrapper">
                 <label class="form__label" for="number">Контактный телефон*:</label>
-                <input class="form__input-number" id="number" type="tel" placeholder="Введите телефон" required>
+                <input class="form__input" id="number" type="tel" placeholder="Введите телефон" required>
               </div>
               <div class="form__wrapper">
                 <label class="form__label" for="email">Электронная почта*:</label>
-                <input class="form__input-email" id="email" type="email" placeholder="Введите e-mail" required>
+                <input class="form__input" id="email" type="email" placeholder="Введите e-mail" required>
               </div>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__title">Ваше общее впечатление:</legend>
+            <fieldset class="form__fieldset form__fieldset-radio">
+              <legend class="form__title form__title-radio">Ваше общее впечатление:</legend>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label">
-                    <input class="form__radio" type="radio" name="impression" value="positive" checked>
+                    <input class="form__input-radio" type="radio" name="impression" value="positive" checked>
                     <span class="form__option">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label">
-                    <input class="form__radio" type="radio" name="impression" value="negative">
+                    <input class="form__input-radio" type="radio" name="impression" value="negative">
                     <span class="form__option">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label">
-                    <input class="form__radio" type="radio" name="impression" value="hard choice">
+                    <input class="form__input-radio" type="radio" name="impression" value="hard choice">
                     <span class="form__option">Затрудняюсь ответить</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__title">Посещенные достопримечательности:</legend>
+            <fieldset class="form__fieldset form__fieldset-radio">
+              <legend class="form__title form__title-radio">Посещенные достопримечательности:</legend>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label">
@@ -126,7 +127,7 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__title">Опишите свои эмоции:</legend>
-              <label class="form__label" for="textarea">Ваши эмоции</label>
+              <label class="visually-hidden" for="textarea">Ваши эмоции</label>
               <textarea class="form__textarea" id="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <div class="form__wrapper-button">
@@ -136,7 +137,7 @@
           </form>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer main-footer__wrapper">
         <h2 class="main-footer__title">#visitsedona</h2>
         <div class="main-footer__social social">
           <ul class="social__list">

@@ -1,5 +1,10 @@
 @import "../bootstrap.scss";
 
+
+.feedback__indents {
+  padding: 0 20px;
+}
+
 .feedback__wrapper {
   padding: 36px 20px 28px;
 }
@@ -14,5 +19,26 @@
 }
 
 .feedback__form {
-  padding: 24px 20px 22px;
+  // padding: 24px 20px 22px;
+}
+
+@media (min-width: $tablet-param) {
+  .feedback__indents {
+    padding: 0 60px;
+  }
+
+  .feedback__wrapper {
+    min-width: 250px;
+  }
+
+  .feedback__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .feedback__description {
+    margin: 0;
+  }
 }
