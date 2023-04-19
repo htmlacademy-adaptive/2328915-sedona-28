@@ -2,32 +2,21 @@
 @import "../bootstrap.scss";
 
 .main-header {
-  display: flex;
   position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
   min-height: 56px;
 }
 
 .main-header__logo {
+  width: 185px;
+  height: 95px;
   position: absolute;
   z-index: 2;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  // display: none;
 }
-
-
-@media (min-width: $tablet-param) {
-  .main-header__logo {
-    width: 185px;
-    height: 95px;
-  }
-}
-
-// .main-header__logo {
-//   @media (min-width: 768px) {
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//   }
-// }

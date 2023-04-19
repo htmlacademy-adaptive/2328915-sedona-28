@@ -1,55 +1,74 @@
 @import "../bootstrap.scss";
 
+
+.modal--error {
+  min-height: 280px;
+  width: 320px;
+
+  @media (min-width: $tablet-param) {
+    min-height: 347px;
+    width: 400px;
+  }
+}
+
 .modal__wrapper {
-  padding: 45px 42px 35px;
+  padding: 45px 42px 0;
+
+  @media (min-width: $tablet-param) {
+    min-height: 280px;
+    padding: 50px 46px;
+  }
 }
 
 .modal__title {
   @include bold-text;
+  margin: 0;
+
+  @media (min-width: $tablet-param) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
 }
 
 .modal__description {
   @include normal-text;
+  padding-top: 40px;
+  padding-bottom: 28px;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-param) {
+    padding-bottom: 53px;
+  }
 }
 
 .modal__wrapper-btn {
   height: 98px;
   background-color: #f2f2f2;
-}
 
-@media (min-width: $tablet-param) {
-  .modal__wrapper {
-    min-width: 320px;
-    min-height: 280px;
-  }
-
-  .modal__title {
-    font-size: 30px;
-    line-height: 40px;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  .modal__description {
-    margin: 0;
-    font-size: 21px;
-    line-height: 26px;
-  }
-
-  .modal__text-wrapper {
-    padding: 50px 47px 25px 47px;
-    min-width: 307px;
-  }
-
-  .modal__button {
-    margin-bottom: 35px;
-    min-width: 272px;
-    height: 58px;
-  }
-
-  .modal__wrapper-btn {
+  @media (min-width: $tablet-param) {
     padding-top: 50px;
     min-height: 146px;
+  }
+}
+
+.modal__text-wrapper {
+  @media (min-width: $tablet-param) {
+    // padding: 50px 47px 25px 47px;
+    min-width: 307px;
+  }
+}
+
+.modal__button {
+  @include button;
+  min-width: 180px;
+  min-height: 58px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-param) {
+    min-width: 272px;
+    height: 58px;
+    margin-bottom: 44px;
   }
 }

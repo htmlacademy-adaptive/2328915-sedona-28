@@ -1,28 +1,56 @@
 @import "../bootstrap.scss";
 
 .search-hotel__wrapper {
-  padding: 38px 18px 49px;
+  // padding: 38px 18px 49px;
+  min-height: 287px;
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .search-hotel__wrapper {
+    @media (min-width: $tablet-param) {
+      min-height: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .search-hotel__title {
   @include bold-text;
+  margin: 0;
+
+  @media (min-width: $tablet-param) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .search-hotel__description {
   @include normal-text;
   text-transform: uppercase;
+
+  margin: 0;
+  padding: 30px 0 32px;
+
+  @media (min-width: $tablet-param) {
+    padding: 40px 0 44px;
+  }
 }
 
 .search-hotel__button {
+  @include button;
+  margin: 0 auto;
+  padding: 15px 30px 0;
   text-decoration: none;
-}
+  min-height: 58px;
+  width: 284px;
 
-@media (min-width: $tablet-param) {
-  .search-hotel__wrapper {
-    min-height: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  @media (min-width: $tablet-param) {
+    width: 458px;
+    padding: 15px 100px 0;
   }
 }

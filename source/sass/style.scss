@@ -1,7 +1,6 @@
 // Начните писать стили здесь
-
+@import "./base.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/button.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/feedback.scss";
@@ -15,6 +14,10 @@
 @import "./blocks/main-nav.scss";
 @import "./blocks/modal.scss";
 @import "./blocks/page.scss";
+@import "./blocks/fieldset-checkbox.scss";
+@import "./blocks/fieldset-radio.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/wrapper.scss";
 @import "./blocks/search-hotel.scss";
 @import "./blocks/sedona-map.scss";
 @import "./blocks/social.scss";
@@ -24,5 +27,4 @@
 @import "./utils.scss";
 @import "./variables.scss";
 @import "./fonts.scss";
-@import "./base.scss";
 @import "./blocks/container.scss"

@@ -1,0 +1,45 @@
+@import "../bootstrap.scss";
+
+.fieldset-textarea {
+  width: 100%;
+}
+
+.fieldset-textarea__field {
+  background-color: #f2f2f2;
+  width: 100%;
+  min-height: 150px;
+  border: 0;
+  resize: none;
+
+  @media (min-width: $tablet-param) {
+    min-width: 648px;
+    min-height: 160px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.fieldset-textarea__title {
+  @include bold-text;
+  padding-top: 49px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-param) {
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 42px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 87px 0 28px;
+  }
+}
+
+.fieldset-textarea__field::placeholder {
+  @include bold-text;
+  text-align: left;
+  text-transform: initial;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px 0 0 16px;
+}

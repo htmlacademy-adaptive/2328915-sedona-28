@@ -18,18 +18,3 @@
   height: 48px;
   width: 48px;
 }
-
-@media (min-width: $tablet-param) {
-  .social__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    min-width: 156px;
-  }
-
-  .social__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}

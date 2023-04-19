@@ -1,44 +1,58 @@
 @import "../bootstrap.scss";
 
 
-.feedback__indents {
+.feedback__wrap {
   padding: 0 20px;
+
+  @media (min-width: $tablet-param) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 0 120px;
+  }
 }
 
 .feedback__wrapper {
-  padding: 36px 20px 28px;
+  // padding: 36px 20px 28px;
+  min-height: 223px;
+
+  @media (min-width: $tablet-param) {
+    min-height: 260px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    min-height: 274px;
+  }
 }
 
 .feedback__title {
   @include bold-text;
+  padding: 36px 0 24px;
+  margin: 0;
+
+  @media (min-width: $tablet-param) {
+    font-size: 30px;
+    line-height: 26px;
+    padding: 63px 0 20px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 115px 0 31px;
+  }
 }
 
 .feedback__description {
   @include normal-text;
+  margin: 0;
+  padding-bottom: 53px;
   text-transform: uppercase;
-}
 
-.feedback__form {
-  // padding: 24px 20px 22px;
-}
-
-@media (min-width: $tablet-param) {
-  .feedback__indents {
-    padding: 0 60px;
+  @media (min-width: $tablet-param) {
+    padding-bottom: 108px;
   }
 
-  .feedback__wrapper {
-    min-width: 250px;
-  }
-
-  .feedback__title {
-    font-size: 30px;
-    line-height: 26px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-
-  .feedback__description {
-    margin: 0;
+  @media (min-width: $dekstop-param) {
+    padding-bottom: 68px;
   }
 }

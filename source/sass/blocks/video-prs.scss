@@ -1,24 +1,54 @@
 @import "../bootstrap.scss";
 
 
-.video-prs__doubt {
-  padding: 17px 28px 38px;
-}
+.video-player__doubt {
+  min-height: 171px;
+  padding: 43px 28px 38px;
 
-.video-prs__title {
-  @include bold-text;
-}
-
-.video-prs__description {
-  text-transform: uppercase;
-}
-
-@media (min-width: $tablet-param) {
-  .video-prs__doubt {
-    min-height: 250px;
-
+  @media (min-width: $tablet-param) {
+    min-height: 687px;
+    padding: 58px 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+.video-player__title {
+  @include bold-text;
+  margin: 0;
+}
+
+.video-player__description {
+  margin: 0;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-param) {
+    padding-top: 40px;
+    padding-bottom: 66px;
+  }
+}
+
+.video-player__link {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-player__link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 27px solid transparent;
+  border-left: 54px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 27px solid transparent;
+  top: -1200%;
+  left: 50%;
+
+  @media (min-width: $tablet-param) {
+    left: 50%;
+    top: 43%;
   }
 }

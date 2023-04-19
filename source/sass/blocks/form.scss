@@ -10,43 +10,40 @@
   @include reset-indents;
   width: 100%;
   border: 0;
+
+  @media (min-width: $tablet-param) {
+    min-height: 269px;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.form__fieldset:first-child {
+  @media (min-width: $tablet-param) {
+    padding-right: 60px;
+  }
 }
 
 .form__title {
   @include bold-text;
-  padding-top: 59px;
-  padding-bottom: 20px;
-}
 
-.form__label {
-  @include normal-text;
-  text-transform: uppercase;
-  padding-top: 16px;
-}
-
-.form__input {
-  min-width: 280px;
-  width: 100%;
-  min-height: 58px;
-  border: 0;
-  background-color: #f2f2f2;
-}
-
-.form__input::placeholder {
-  @include bold-text;
-  text-transform: capitalize;
-
-  &__input-number::placeholder,
-  &__input-email::placeholder {
-    @include bold-text;
-    text-transform: initial;
-    color: rgba(0, 0, 0, 0.3);
+  @media (min-width: $tablet-param) {
+    padding-bottom: 12px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
 .form__wrapper-button {
   width: 280px;
   padding-top: 56px;
+
+  @media (min-width: $tablet-param) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 48px;
+  }
 }
 
 .form__wrapper {
@@ -55,110 +52,27 @@
   flex-direction: column;
 }
 
-.form__list {
-  @include reset-indents;
-}
-
-.form__item {
-  @include list-reset;
-}
-
-.form__option {
-  @include bold-text;
-  text-transform: initial;
-}
-
-.form__textarea {
-  background-color: #f2f2f2;
-  width: 279px;
-  min-height: 150px;
-  border: 0;
-  resize: none;
-
-
-  &__textarea::placeholder {
-    @include bold-text;
-    text-align: left;
-    text-transform: initial;
-    color: rgba(0, 0, 0, 0.3);
-  }
-}
 
 .form__button {
+  @include button;
   min-width: 280px;
   min-height: 58px;
-  // width: 100%;
   padding: 0;
+
+  @media (min-width: $tablet-param) {
+    min-width: 324px;
+  }
 }
 
 .form__small-text {
   font-size: 12px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
-}
+  display: flex;
+  justify-content: end;
 
-@media (min-width: $tablet-param) {
-  .form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .form__fieldset {
-    min-height: 269px;
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .form__fieldset:first-child {
-    padding-right: 60px;
-  }
-
-
-  .form__fieldset-radio {
-    width: 100%;
-  }
-
-  .form__wrapper {
-    flex-direction: column;
-    display: flex;
-  }
-
-  .form__input:last-child {
-    // margin-bottom: 100px;
-  }
-
-  .form__title {
-    padding-bottom: 28px;
-  }
-
-  .form__title-radio {
-    padding-top: 59px;
-    padding-bottom: 20px;
-  }
-
-  .form__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .form__item {
-    width: 50%;
-  }
-
-  .form__textarea {
-    min-width: 648px;
-    min-height: 160px;
-    margin: 0 auto;
-  }
-
-  .form__wrapper-button {
-    display: flex;
-    padding: 0 60px 0 60px;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .form__button {
-    min-width: 324px;
+  @media (min-width: $tablet-param) {
+    justify-content: center;
+    align-items: center;
   }
 }

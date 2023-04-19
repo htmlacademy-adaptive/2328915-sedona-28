@@ -1,50 +1,60 @@
 @import "../bootstrap.scss";
 
 .catalog__wrapper {
-  padding: 37px 0 25px;
+  min-height: 188px;
+
+  @media (min-width: $tablet-param) {
+    margin: 0 auto;
+    width: 458px;
+    min-height: 247px;
+  }
+}
+
+.catalog__wrap {
+  @media (min-width: $tablet-param) {
+    padding: 0 60px;
+  }
 }
 
 .catalog__title {
   @include bold-text;
+  margin: 0;
+  padding-top: 37px;
+
+  @media (min-width: $tablet-param) {
+    font-size: 30px;
+    line-height: 26px;
+    padding-top: 66px;
+  }
 }
 
 .catalog__description {
   @include normal-text;
+  margin: 0;
+  padding-top: 37px;
+  padding-bottom: 67px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-param) {
+    padding-top: 40px;
+    padding-bottom: 66px;
+  }
 }
 
 .catalog__list-card {
   @include reset-indents;
-}
 
-.catalog__item-card {
-  @include list-reset;
-  // padding: 25px 20px;
-}
-
-@media (min-width: $tablet-param) {
-  .catalog__wrap {
-    padding: 0 60px;
-  }
-
-  .catalog__wrapper {
-    margin: 0 auto;
-    width: 458px;
-    min-height: 200px;
-  }
-
-  .catalog__title {
-    font-size: 30px;
-    line-height: 26px;
-  }
-
-  .catalog__list-card {
+  @media (min-width: $tablet-param) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
   }
+}
 
-  .catalog__item-card {
+.catalog__item-card {
+  @include list-reset;
+
+  @media (min-width: $tablet-param) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

@@ -1,9 +1,7 @@
 @import "../bootstrap.scss";
 
-.copyright {
-  &__text {
-    @include normal-text;
-    text-transform: uppercase;
-    color: #000000;
-  }
+.copyright__text {
+  @include normal-text;
+  text-transform: uppercase;
+  color: #000000;
 }

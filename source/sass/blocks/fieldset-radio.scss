@@ -1,0 +1,54 @@
+@import "../bootstrap.scss";
+
+.fieldset-radio {
+  width: 100%;
+}
+
+.fieldset-radio__title {
+  @include bold-text;
+  padding-top: 59px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-param) {
+    padding-top: 63px;
+    padding-bottom: 28px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-top: 71px;
+    padding-bottom: 45px;
+  }
+}
+
+.fieldset-radio__list {
+  @include reset-indents;
+
+  @media (min-width: $tablet-param) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 0 53px;
+  }
+}
+
+.fieldset-radio__item {
+  @include list-reset;
+
+  @media (min-width: $tablet-param) {
+    width: 50%;
+  }
+
+  @media (min-width: $dekstop-param) {
+    width: 33%;
+  }
+}
+
+
+.fieldset-radio__option {
+  @include bold-text;
+  text-transform: inherit;
+}

@@ -2,7 +2,18 @@
 
 
 .main-footer__wrapper {
-  padding: 33px 82px;
+  padding: 55px 82px;
+
+  @media (min-width: $tablet-param) {
+    padding: 64px 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 64px 120px 0;
+  }
 }
 
 .main-footer__title {
@@ -19,12 +30,4 @@
 
 .main-footer__copyright {
   padding: 30px 0;
-}
-
-@media (min-width: $tablet-param) {
-  .main-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }

@@ -1,59 +1,74 @@
 @import "../bootstrap.scss";
 
 .item-card__title {
+  margin: 0;
+  padding-bottom: 12px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-param) {
+
+  }
 }
 
 .item-card__wrapper {
+  min-height: 120px;
   text-align: start;
   padding: 0 20px;
+
+  @media (min-width: $tablet-param) {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+}
+
+.item-card__text-wrapper {
+  padding: 15px 0 11px;
+
+  @media (min-width: $tablet-param) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.item-card__likes {
+  padding-bottom: 55px;
+
+  @media (min-width: $tablet-param) {
+    padding: 28px 0 31px;
+  }
 }
 
 .item-card__author {
   @include normal-text;
   font-style: normal;
+
+  @media (min-width: $tablet-param) {
+    margin-right: auto;
+  }
+}
+
+.item-card--first {
+  @media (min-width: $tablet-param) {
+    grid-column: 1/3;
+    min-width: 648px;
+  }
+}
+
+.item-card__photo {
+  @media (min-width: $tablet-param) {
+    min-width: 324px;
+  }
 }
 
 .item-card__count {
   font-weight: 700;
-}
 
-@media (min-width: $tablet-param) {
-  .item-card__first {
-    grid-column: 1/3;
-    min-width: 648px;
-  }
-
-  .item-card__wrapper {
-    display: flex;
-    // flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background-color: #f2f2f2;
-  }
-
-  .item-card__text-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 22px 0 15px;
-  }
-
-  .item-card__title {
-    margin: 0 0 15px;
-  }
-
-  .item-card__count {
+  @media (min-width: $tablet-param) {
     margin-left: 9px;
-  }
-
-  .item-card__author {
-    margin-right: auto;
-  }
-
-  .item-card__photo {
-    min-width: 324px;
   }
 }

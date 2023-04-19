@@ -1,47 +1,87 @@
 @import "../bootstrap.scss";
 
+.reasons {
+  @media (min-width: $tablet-param) {
+    @include list-reset;
+  }
+}
+
 .reasons-list {
   @include reset-indents;
-  // padding: 23px 18px 46px;
+
+  @media (min-width: $tablet-param) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .reasons__item {
   @include list-reset;
+  padding: 30px 18px;
+  min-height: 115px;
+
+  @media (max-width: $tablet-param) {
+    position: relative;
+    padding-left: 66px;
+  }
+
+
+  @media (min-width: $tablet-param) {
+    width: 33%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 33px;
+    min-width: 256px;
+    min-height: 330px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 69px 50px;
+  }
+}
+
+.reasons__image {
+  @media (max-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    left: 18px;
+  }
 }
 
 .reasons__title {
   @include bold-text;
+  text-align: center;
+
+  @media (max-width: $tablet-param) {
+    text-align: start;
+    margin: 10px 0;
+  }
+
+  @media (min-width: $tablet-param) {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 26px 0 34px;
+    margin: 0 auto;
+  }
 }
 
 .reasons__description {
   @include normal-text;
   text-transform: uppercase;
+  margin: 0;
+  padding: 16px 0 0;
+
+  @media (max-width: $tablet-param) {
+    text-align: start;
+  }
 }
 
-@media (min-width: $tablet-param) {
-  .reasons {
-    @include list-reset;
-  }
-
-  .reasons-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .reasons__item {
-    justify-content: center;
-    width: 33%;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-
-    min-width: 256px;
-    min-height: 330px;
-  }
-
-  .reasons__wrapper {
-    margin: 0 auto;
+.reasons__wrapper {
+  @media (min-width: $tablet-param) {
     width: 190px;
   }
 }

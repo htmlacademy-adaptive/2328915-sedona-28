@@ -29,3 +29,14 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $white-color;
+  background-color: $blue-color;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}

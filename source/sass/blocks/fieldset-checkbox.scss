@@ -1,0 +1,56 @@
+@import "../bootstrap.scss";
+
+.fieldset-checkbox {
+  width: 100%;
+  min-height: 252px;
+
+  @media (min-width: $tablet-param) {
+    min-height: 189px;
+  }
+}
+
+.fieldset-checkbox__title {
+  @include bold-text;
+  padding-top: 49px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-param) {
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 63px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-top: 73px;
+    padding-bottom: 59px;
+  }
+}
+
+.fieldset-checkbox__list {
+  @include reset-indents;
+
+  @media (min-width: $tablet-param) {
+    padding: 0 45px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.fieldset-checkbox__item {
+  @include list-reset;
+
+  @media (min-width: $tablet-param) {
+    width: 50%;
+  }
+
+  @media (min-width: $dekstop-param) {
+    width: 25%;
+  }
+}
+
+
+.fieldset-checkbox__option {
+  @include bold-text;
+  text-transform: inherit;
+}

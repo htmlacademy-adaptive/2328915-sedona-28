@@ -3,18 +3,7 @@
 .container {
   min-width: 320px;
   max-width: 1200px;
-  min-height: 100vh;
+  margin: 0 auto;
 
   background-color: $white-color;
 }
-
-
-.container__center {
-  margin: 0 auto;
-}
-
-// @media (min-width: 1280px) {
-//   .container {
-//     min-width: 100vh;
-//   }
-// }
