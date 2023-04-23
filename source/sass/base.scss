@@ -11,9 +11,3 @@ img {
   height: auto;
   object-fit: contain;
 }
-
-@media (max-width: $mobile-param) {
-  br {
-    // display: none;
-  }
-}

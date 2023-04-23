@@ -114,9 +114,10 @@
 }
 
 .advantages__image img {
+  display: block;
+  width: 100%;
+
   @media (min-width: $tablet-param) {
-    display: block;
-    width: 100%;
     min-height: 256px;
     object-fit: cover;
   }
