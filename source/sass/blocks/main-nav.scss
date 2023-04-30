@@ -31,10 +31,28 @@
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
+  opacity: 1;
+
+  &:active {
+    opacity: 30%;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
 }
 
 .main-nav--closed .main-nav__toggle {
   top: -25px;
+  opacity: 1;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .main-nav--opened {
@@ -70,7 +88,7 @@
   width: 23px;
   height: 22px;
   z-index: 2;
-  background-image: url("../img/header/icon-menu.svg");
+  background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
 }
 
@@ -86,6 +104,7 @@
 
   @media (min-width: $tablet-param) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -96,36 +115,50 @@
   @include list-reset;
   background-color: $blue-color;
   min-height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 
   @media (min-width: $tablet-param) {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     background-color: #ffffff;
-    min-width: 153px;
+    min-width: 20%;
+    max-width: 20%;
     height: 100%;
-  }
-
-  @media (min-width: 1280px) {
-    max-width: 240px;
   }
 }
 
 .main-nav__link {
   color: $white-color;
   text-decoration: none;
+  display: block;
+  width: 100%;
+
+  @media (max-width: $tablet-param) {
+    &:hover {
+      background-color: #669ec0;
+    }
+  }
 
   @media (min-width: $tablet-param) {
     @include normal-text;
     text-transform: uppercase;
     font-weight: 700;
     color: #000000;
+    padding: 7px 0;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
 
     &--active {
       color: #766357;
+      pointer-events: none;
     }
   }
 }
@@ -133,7 +166,21 @@
 .main-nav--opened .main-nav__item {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   width: 100%;
-  padding: 14px;
+}
+
+.main-nav--opened .main-nav__link {
+  @media (max-width: $tablet-param) {
+    padding: 15px 50px;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: #5496bd;
+    }
+  }
 }
 
 .main-nav--opened .main-nav__item:not(:last-child) {

@@ -11,26 +11,31 @@
   width: 100%;
   border: 0;
 
+  @media (max-width: $tablet-param) {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 24px 20px 0;
+  }
+
   @media (min-width: $tablet-param) {
-    min-height: 269px;
+    min-width: 295px;
     width: 50%;
     margin: 0 auto;
+  }
+
+  @media (min-width: $dekstop-param) {
+    min-width: 430px;
+  }
+}
+
+.form__fieldset:last-of-type {
+  @media (max-width: $tablet-param) {
+    border-bottom: none;
   }
 }
 
 .form__fieldset:first-child {
   @media (min-width: $tablet-param) {
     padding-right: 60px;
-  }
-}
-
-.form__title {
-  @include bold-text;
-
-  @media (min-width: $tablet-param) {
-    padding-bottom: 12px;
-    font-size: 21px;
-    line-height: 26px;
   }
 }
 
@@ -46,13 +51,6 @@
   }
 }
 
-.form__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-
 .form__button {
   @include button;
   min-width: 280px;
@@ -62,6 +60,19 @@
   @media (min-width: $tablet-param) {
     min-width: 324px;
   }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__small-text {
@@ -69,7 +80,7 @@
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 
   @media (min-width: $tablet-param) {
     justify-content: center;

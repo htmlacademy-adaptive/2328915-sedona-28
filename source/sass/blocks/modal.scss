@@ -1,13 +1,22 @@
 @import "../bootstrap.scss";
 
-
 .modal--error {
   min-height: 280px;
   width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-param) {
     min-height: 347px;
     width: 400px;
+  }
+}
+
+.modal--success {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-param) {
+    width: 640px;
   }
 }
 
@@ -55,7 +64,6 @@
 
 .modal__text-wrapper {
   @media (min-width: $tablet-param) {
-    // padding: 50px 47px 25px 47px;
     min-width: 307px;
   }
 }
@@ -70,5 +78,18 @@
     min-width: 272px;
     height: 58px;
     margin-bottom: 44px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }

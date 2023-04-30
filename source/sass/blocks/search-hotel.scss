@@ -1,7 +1,6 @@
 @import "../bootstrap.scss";
 
 .search-hotel__wrapper {
-  // padding: 38px 18px 49px;
   min-height: 287px;
   padding: 0 18px;
   display: flex;
@@ -52,5 +51,18 @@
   @media (min-width: $tablet-param) {
     width: 458px;
     padding: 15px 100px 0;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }

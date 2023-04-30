@@ -4,6 +4,7 @@
 .advantages__container {
   min-height: 205px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   padding: 32px 18px 16px;
@@ -28,6 +29,25 @@
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
+    max-width: 68%;
+  }
+
+  @media (min-width: $dekstop-param) {
+    max-width: 41%;
+  }
+}
+
+.advantages__container-description {
+  @include normal-text;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-param) {
+    max-width: 87%;
+  }
+
+  @media (min-width: $dekstop-param) {
+    max-width: 41%;
   }
 }
 

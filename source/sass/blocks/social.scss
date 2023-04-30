@@ -11,10 +11,21 @@
 
 .social__item {
   @include list-reset;
+  color: #ffffff;
   background-color: $blue-color;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 48px;
   width: 48px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

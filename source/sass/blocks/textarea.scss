@@ -2,9 +2,45 @@
 
 .fieldset-textarea {
   width: 100%;
+
+  @media (min-width: $tablet-param) {
+    position: relative;
+  }
+}
+
+.fieldset-textarea--line::after {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    top: -53px;
+    left: 0;
+    background-color: #d8d8d8;
+  }
+
+  @media (min-width: $dekstop-param) {
+    top: -36px;
+  }
+}
+
+.fieldset-textarea::before {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    top: -53px;
+    right: 0;
+    background-color: #d8d8d8;
+  }
 }
 
 .fieldset-textarea__field {
+  @include bold-text;
+  text-transform: lowercase;
+  text-align: start;
+  padding: 16px 0 0 16px;
   background-color: #f2f2f2;
   width: 100%;
   min-height: 150px;
@@ -16,6 +52,16 @@
     min-height: 160px;
     margin: 0 auto;
     width: 100%;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
   }
 }
 
@@ -41,5 +87,4 @@
   text-align: left;
   text-transform: initial;
   color: rgba(0, 0, 0, 0.3);
-  padding: 16px 0 0 16px;
 }

@@ -2,17 +2,22 @@
 
 
 .main-footer__wrapper {
-  padding: 55px 82px;
+  padding: 33px 82px 33px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 
   @media (min-width: $tablet-param) {
-    padding: 64px 60px 0;
-    display: flex;
+    row-gap: 0;
+    padding: 36px 60px 36px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: $dekstop-param) {
-    padding: 64px 120px 0;
+    padding: 36px 120px 36px;
   }
 }
 
@@ -22,6 +27,7 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .main-footer__description {
@@ -29,5 +35,13 @@
 }
 
 .main-footer__copyright {
-  padding: 30px 0;
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }

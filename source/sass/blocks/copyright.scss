@@ -1,7 +1,17 @@
 @import "../bootstrap.scss";
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
 .copyright__text {
-  @include normal-text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: auto 0;
+  display: block;
   text-transform: uppercase;
-  color: #000000;
 }

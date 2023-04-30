@@ -1,0 +1,69 @@
+@import "../bootstrap.scss";
+
+
+.video-player__doubt {
+  min-height: 171px;
+  padding: 43px 28px 38px;
+
+  @media (min-width: $tablet-param) {
+    min-height: 687px;
+    padding: 58px 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.video-player-wrapper {
+  margin: 0 auto;
+  max-width: 82%;
+
+  @media (min-width: $tablet-param) {
+    max-width: 58%;
+  }
+
+  @media (min-width: $dekstop-param) {
+    max-width: 37%;
+  }
+}
+
+.video-player__title {
+  @include bold-text;
+  margin: 0;
+}
+
+.video-player__description {
+  margin: 0;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-param) {
+    padding-top: 40px;
+    padding-bottom: 66px;
+  }
+}
+
+.video-player__link {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-player__link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 27px solid transparent;
+  border-left: 54px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 27px solid transparent;
+  top: 50%;
+  left: 40%;
+  transform: translate(50%, -50%);
+
+  @media (min-width: $tablet-param) {
+    left: 45%;
+    top: 50%;
+  }
+}

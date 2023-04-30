@@ -5,6 +5,10 @@
   padding-bottom: 12px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $dekstop-param) {
+    color: #ffffff;
+  }
 }
 
 .item-card__wrapper {
@@ -44,6 +48,17 @@
 
   @media (min-width: $tablet-param) {
     padding: 28px 0 31px;
+  }
+}
+
+
+.item-card__likes svg {
+  opacity: 0.3;
+  cursor: pointer;
+
+  @media (min-width: $dekstop-param) {
+    color: #ffffff;
+    opacity: 1;
   }
 }
 
