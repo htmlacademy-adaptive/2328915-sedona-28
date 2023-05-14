@@ -1,0 +1,232 @@
+.fieldset {
+  @include reset-indents;
+  width: 100%;
+  border: 0;
+  position: relative;
+}
+
+.fieldset__text .fieldset__field:first-of-type {
+  @media (min-width: $tablet-param) {
+    padding-top: 13px;
+  }
+}
+
+.fieldset__radio {
+  @media (max-width: $tablet-param) {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.fieldset__radio--line::after {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    top: -51px;
+    left: 0;
+    background-color: #d8d8d8;
+  }
+
+  @media (min-width: $dekstop-param) {
+    top: -71px;
+    width: 280px;
+  }
+}
+
+.fieldset__radio--line::before {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    top: -51px;
+    right: 0;
+    background-color: #d8d8d8;
+  }
+
+  @media (min-width: $dekstop-param) {
+    top: -71px;
+    width: 280px;
+  }
+}
+
+
+.fieldset__checkbox--line::after {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    top: -74%;
+    left: 0;
+    background-color: #d8d8d8;
+  }
+
+  @media (min-width: $dekstop-param) {
+    top: -86px;
+    width: 280px;
+  }
+}
+
+.fieldset__checkbox--line::before {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    top: -74%;
+    right: 0;
+    background-color: #d8d8d8;
+  }
+
+  @media (min-width: $dekstop-param) {
+    top: -86px;
+    width: 280px;
+  }
+}
+
+.fieldset__textarea--line::after {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    top: -25%;
+    left: 0;
+    background-color: #d8d8d8;
+  }
+
+  @media (min-width: $dekstop-param) {
+    width: 280px;
+  }
+}
+
+.fieldset__textarea--line::before {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    top: -25%;
+    right: 0;
+    background-color: #d8d8d8;
+  }
+
+  @media (min-width: $dekstop-param) {
+    width: 280px;
+  }
+}
+
+.fieldset__text {
+  position: relative;
+
+  @media (max-width: $tablet-param) {
+    padding: 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-param) {
+    min-width: 295px;
+    width: 50%;
+  }
+
+  @media (min-width: $dekstop-param) {
+    min-width: 430px;
+  }
+}
+
+.fieldset__text:first-child::before {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 338px;
+    background-color: #d8d8d8;
+    right: 1px;
+    top: -32px;
+  }
+}
+
+.fieldset__title {
+  @include bold-text;
+
+  @media (max-width: $tablet-param) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $tablet-param) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.fieldset__title-radio {
+  @media (max-width: $tablet-param) {
+    padding-top: 19px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-param) {
+    padding-top: 63px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-top: 71px;
+    padding-bottom: 54px;
+  }
+}
+
+
+.fieldset__title-checkbox {
+  @include bold-text;
+  padding-bottom: 30px;
+
+  @media (max-width: $tablet-param) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $tablet-param) {
+    font-size: 21px;
+    padding-top: 39px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-top: 31px;
+    padding-bottom: 69px;
+  }
+}
+
+
+.fieldset__textarea {
+  padding: 16px 0 0 16px;
+}
+
+.fieldset__wrapper-textarea {
+  @media (max-width: $tablet-param) {
+    padding: 0 20px;
+  }
+}
+
+.fieldset__title-textarea {
+  @include bold-text;
+  position: relative;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-param) {
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 52px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 94px 0 28px;
+  }
+}

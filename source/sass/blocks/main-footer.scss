@@ -1,15 +1,12 @@
-@import "../bootstrap.scss";
-
-
 .main-footer__wrapper {
-  padding: 33px 82px 33px;
+  padding: 50px 82px 33px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
 
   @media (min-width: $tablet-param) {
     row-gap: 0;
-    padding: 36px 60px 36px;
+    padding: 36px 60px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,7 +14,31 @@
   }
 
   @media (min-width: $dekstop-param) {
-    padding: 36px 120px 36px;
+    padding: 49px 119px 34px;
+  }
+}
+
+.main-footer__wrapper--form {
+  padding: 58px 82px 33px;
+
+  @media (min-width: $tablet-param) {
+    padding: 100px 61px 33px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 100px 120px 33px;
+  }
+}
+
+.main-footer__wrapper--catalog {
+  padding: 33px 82px 33px;
+
+  @media (min-width: $tablet-param) {
+    padding: 76px 60px 36px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 122px 120px 36px;
   }
 }
 

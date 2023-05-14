@@ -1,46 +1,7 @@
-@import "../bootstrap.scss";
-
-.fieldset-textarea {
-  width: 100%;
-
-  @media (min-width: $tablet-param) {
-    position: relative;
-  }
-}
-
-.fieldset-textarea--line::after {
-  @media (min-width: $tablet-param) {
-    position: absolute;
-    content: "";
-    width: 123px;
-    height: 1px;
-    top: -53px;
-    left: 0;
-    background-color: #d8d8d8;
-  }
-
-  @media (min-width: $dekstop-param) {
-    top: -36px;
-  }
-}
-
-.fieldset-textarea::before {
-  @media (min-width: $tablet-param) {
-    position: absolute;
-    content: "";
-    width: 123px;
-    height: 1px;
-    top: -53px;
-    right: 0;
-    background-color: #d8d8d8;
-  }
-}
-
-.fieldset-textarea__field {
+.textarea {
   @include bold-text;
   text-transform: lowercase;
   text-align: start;
-  padding: 16px 0 0 16px;
   background-color: #f2f2f2;
   width: 100%;
   min-height: 150px;
@@ -48,10 +9,14 @@
   resize: none;
 
   @media (min-width: $tablet-param) {
-    min-width: 648px;
+    width: 648px;
     min-height: 160px;
     margin: 0 auto;
-    width: 100%;
+  }
+
+  @media (min-width: $dekstop-param) {
+    width: 768px;
+    margin-left: 96px;
   }
 
   &:hover {
@@ -63,28 +28,17 @@
     outline: 4px solid #e5e5e5;
     outline-offset: -4px;
   }
-}
 
-.fieldset-textarea__title {
-  @include bold-text;
-  padding-top: 49px;
-  padding-bottom: 20px;
-
-  @media (min-width: $tablet-param) {
-    font-size: 21px;
-    line-height: 26px;
-    padding-top: 42px;
-    padding-bottom: 28px;
+  &::placeholder {
+    @include bold-text;
+    text-align: left;
+    text-transform: initial;
+    color: rgba(0, 0, 0, 0.3);
   }
 
-  @media (min-width: $dekstop-param) {
-    padding: 87px 0 28px;
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
   }
-}
-
-.fieldset-textarea__field::placeholder {
-  @include bold-text;
-  text-align: left;
-  text-transform: initial;
-  color: rgba(0, 0, 0, 0.3);
 }

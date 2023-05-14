@@ -1,6 +1,3 @@
-
-@import "../bootstrap.scss";
-
 .main-header {
   position: relative;
   display: flex;
@@ -11,12 +8,12 @@
 }
 
 .main-header__logo {
+  display: block;
   width: 185px;
   height: 95px;
   position: absolute;
   z-index: 2;
   top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%);
 }

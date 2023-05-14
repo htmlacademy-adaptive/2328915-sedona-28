@@ -1,6 +1,3 @@
-@import "../bootstrap.scss";
-
-
 .feedback__wrap {
   @media (min-width: $tablet-param) {
     padding: 0 60px;
@@ -11,23 +8,27 @@
   }
 }
 
-.feedback__wrapper {
+.feedback__header {
+  margin: 0 auto;
+
   @media (max-width: $tablet-param) {
     border-bottom: 1px solid #e5e5e5;
   }
+
+  @media (min-width: $tablet-param) {
+    max-width: 435px;
+  }
 }
 
-.feedback__title {
+.feedback__header-title {
   @include bold-text;
   padding: 36px 0 24px;
   margin: 0 auto;
-  max-width: 88%;
 
   @media (min-width: $tablet-param) {
     font-size: 30px;
     line-height: 26px;
     padding: 63px 0 20px;
-    max-width: 57%;
   }
 
   @media (min-width: $dekstop-param) {
@@ -35,19 +36,25 @@
   }
 }
 
-.feedback__description {
+.feedback__header-description {
   @include normal-text;
   padding-bottom: 29px;
   text-transform: uppercase;
-  max-width: 88%;
   margin: 0 auto;
 
   @media (min-width: $tablet-param) {
     padding-bottom: 108px;
-    max-width: 57%;
   }
 
   @media (min-width: $dekstop-param) {
     padding-bottom: 68px;
+  }
+}
+
+.feedback__description br {
+  display: none;
+
+  @media (min-width: $tablet-param) {
+    display: block;
   }
 }

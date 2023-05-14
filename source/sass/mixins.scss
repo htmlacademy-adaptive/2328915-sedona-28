@@ -1,5 +1,3 @@
-@import url("./bootstrap.scss");
-
 @mixin bold-text {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -31,9 +29,13 @@
 }
 
 @mixin button {
+  @media (max-width: $tablet-param) {
+    font-size: 18px;
+  }
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
   color: $white-color;
   background-color: $blue-color;
   border: 0;
