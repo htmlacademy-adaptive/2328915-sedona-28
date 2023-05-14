@@ -46,6 +46,15 @@ const scripts = () => {
   .pipe(gulp.dest('build/js'));
 };
 
+// Images
+
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'));
+};
+
+
 // Webp
 
 const createWebp = () => {
@@ -127,6 +136,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
@@ -140,6 +150,7 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
