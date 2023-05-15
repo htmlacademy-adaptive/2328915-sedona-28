@@ -46,27 +46,27 @@
   }
 }
 
-.item-card__likes {
+.item-card__like {
+  display: block;
+  text-decoration: none;
   padding-bottom: 50px;
+
+  cursor: pointer;
 
   @media (min-width: $tablet-param) {
     padding: 23px 19px 24px 0;
   }
 }
 
-.item-card__likes svg {
+
+.item-card__like svg {
   opacity: 0.3;
   color: #000000;
-  cursor: pointer;
 
   @media (min-width: $dekstop-param) {
     color: #ffffff;
     opacity: 1;
   }
-}
-
-.item-card__like {
-  text-decoration: none;
 }
 
 .item-card__author {
@@ -94,6 +94,9 @@
 }
 
 .item-card__photo {
+  display: block;
+  cursor: pointer;
+
   @media (max-width: $tablet-param) {
     height: 280px;
   }
@@ -110,8 +113,14 @@
 .item-card__count {
   font-weight: 700;
   padding-left: 10px;
+  color: #000000;
+  opacity: 1;
 
   @media (min-width: $tablet-param) {
     padding-left: 6px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    color: #ffffff;
   }
 }

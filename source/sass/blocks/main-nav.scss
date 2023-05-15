@@ -27,6 +27,14 @@
   }
 }
 
+.main-nav--opened {
+  @media (max-width: 767px) {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+  }
+}
+
 .main-nav--opened .main-nav__toggle {
   top: 0;
   opacity: 1;
@@ -50,12 +58,6 @@
 
   &:active {
     opacity: 30%;
-  }
-}
-
-.main-nav--opened {
-  @media (max-width: $tablet-param) {
-    z-index: 3;
   }
 }
 
@@ -99,13 +101,13 @@
 .main-nav__list {
   @include reset-indents;
   position: relative;
+  min-height: 56px;
 
   @media (min-width: $tablet-param) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 56px;
   }
 }
 
@@ -199,6 +201,8 @@
 .main-nav--nojs {
   @media (max-width: $tablet-param) {
     z-index: 3;
+    position: absolute;
+    top: 0;
 
     .main-nav__toggle {
       display: none;

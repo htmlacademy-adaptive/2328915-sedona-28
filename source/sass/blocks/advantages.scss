@@ -221,6 +221,9 @@
 }
 
 .advantages__image {
+  display: block;
+  cursor: pointer;
+
   @media (min-width: $tablet-param) {
     width: calc(100% / 3 * 2);
     height: 100%;

@@ -17,6 +17,10 @@
     min-width: 256px;
     min-height: 330px;
   }
+
+  &:hover {
+    opacity: 60%;
+  }
 }
 
 .item-reasons--last {
@@ -52,12 +56,6 @@
   @media (min-width: $tablet-param) {
     display: flex;
     justify-content: center;
-  }
-}
-
-.item-reasons__image--state {
-  &:hover {
-    opacity: 60%;
   }
 }
 
