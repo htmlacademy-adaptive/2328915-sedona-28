@@ -5,6 +5,26 @@
   position: relative;
 }
 
+.fieldset__wrapper--left {
+  @media (min-width: $tablet-param) {
+    padding-right: 40px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 0;
+  }
+}
+
+.fieldset__wrapper--right {
+  @media (min-width: $tablet-param) {
+    padding-left: 43px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding: 0;
+  }
+}
+
 .fieldset__text .fieldset__field:first-of-type {
   @media (min-width: $tablet-param) {
     padding-top: 13px;
@@ -12,7 +32,7 @@
 }
 
 .fieldset__radio {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 1px solid #e5e5e5;
@@ -123,7 +143,7 @@
 .fieldset__text {
   position: relative;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding: 0 20px;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -153,7 +173,7 @@
 .fieldset__title {
   @include bold-text;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding-top: 24px;
   }
 
@@ -164,7 +184,7 @@
 }
 
 .fieldset__title-radio {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding-top: 19px;
     padding-bottom: 30px;
   }
@@ -185,7 +205,7 @@
   @include bold-text;
   padding-bottom: 30px;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding-top: 24px;
   }
 
@@ -207,7 +227,7 @@
 }
 
 .fieldset__wrapper-textarea {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding: 0 20px;
   }
 }

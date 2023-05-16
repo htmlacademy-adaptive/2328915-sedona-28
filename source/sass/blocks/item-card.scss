@@ -97,7 +97,7 @@
   display: block;
   cursor: pointer;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     height: 280px;
   }
   width: 100%;

@@ -8,18 +8,20 @@
 
   @media (min-width: $tablet-param) {
     min-width: 480px;
-    column-gap: 8%;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
   }
 
   @media (min-width: $dekstop-param) {
-    width: 100%;
-    column-gap: 4%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 45px;
   }
 }
 
 .checkbox__list {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding: 0 20px 34px;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -42,12 +44,7 @@
   padding-left: 62px;
 
   @media (min-width: $tablet-param) {
-    width: 46%;
     padding-left: 62px;
-  }
-
-  @media (min-width: $dekstop-param) {
-    width: 22%;
   }
 }
 

@@ -1,3 +1,15 @@
+.sedona-map__wrapper {
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-param) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-bottom: 13px;
+  }
+}
+
 .sedona-map__iframe {
   width: 100%;
   display: block;

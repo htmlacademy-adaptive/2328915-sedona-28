@@ -12,7 +12,7 @@
 }
 
 .catalog__text-wrapper::after {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     position: absolute;
     content: "";
     width: 100%;
@@ -97,7 +97,7 @@
 }
 
 .catalog__item-card::after {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     position: absolute;
     content: "";
     width: 100%;

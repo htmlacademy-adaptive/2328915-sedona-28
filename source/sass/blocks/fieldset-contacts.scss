@@ -1,7 +1,7 @@
 .fieldset-contacts__title {
   @include bold-text;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding-top: 24px;
   }
 
@@ -19,7 +19,7 @@
 }
 
 .fieldset-contacts__wrapper:last-child {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding-bottom: 34px;
   }
 }

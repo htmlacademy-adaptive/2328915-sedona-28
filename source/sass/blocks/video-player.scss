@@ -46,6 +46,16 @@
   }
 }
 
+.video-player__link-wrapper {
+  @media (min-width: $tablet-param) {
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-bottom: 84px;
+  }
+}
+
 .video-player__link {
   display: block;
   position: relative;
@@ -63,6 +73,7 @@
 
 .video-player__link img {
   width: 100%;
+  display: block;
 }
 
 .video-player__link::before {

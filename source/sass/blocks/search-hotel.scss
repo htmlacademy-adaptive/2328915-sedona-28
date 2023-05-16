@@ -52,6 +52,7 @@
 
 .search-hotel__button {
   @include button;
+  font-size: 21px;
   margin: 0 auto;
   padding: 15px 30px 0;
   text-decoration: none;

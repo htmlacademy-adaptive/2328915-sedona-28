@@ -9,21 +9,21 @@
   width: 100%;
   border: 0;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     border-bottom: 1px solid #e2e2e2;
     padding: 24px 0;
   }
 }
 
 .form__fieldset:last-of-type {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     border-bottom: none;
   }
 }
 
 .form__fieldset:first-child {
   @media (min-width: $tablet-param) {
-    padding-right: 29px;
+    padding-right: 4px;
   }
 
   @media (min-width: $dekstop-param) {
@@ -32,10 +32,6 @@
 }
 
 .form__fieldset:nth-child(2) {
-  @media (min-width: $tablet-param) {
-    padding-left: 29px;
-  }
-
   @media (min-width: $dekstop-param) {
     padding-left: 50px;
   }
@@ -43,13 +39,15 @@
 
 .form__wrapper-button {
   width: 280px;
-  padding-top: 51px;
+  padding-top: 47px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-param) {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-top: 43px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $dekstop-param) {
@@ -59,12 +57,12 @@
 
 .form__button {
   @include button;
+  font-size: 18px;
   min-width: 280px;
   min-height: 58px;
   padding: 0;
 
   @media (min-width: $tablet-param) {
-    font-size: 18px;
     width: 324px;
   }
 
@@ -88,13 +86,14 @@
 }
 
 .form__small-text {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
   display: flex;
   justify-content: flex-end;
 
   @media (min-width: $tablet-param) {
+    font-size: 14px;
     justify-content: center;
     align-items: center;
   }

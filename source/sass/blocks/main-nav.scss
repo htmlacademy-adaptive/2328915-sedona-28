@@ -88,12 +88,12 @@
   width: 23px;
   height: 22px;
   z-index: 2;
-  background-image: url("../img/icon-menu.svg");
+  background-image: url("../img/stack.svg#icon-menu");
   background-repeat: no-repeat;
 }
 
 .main-nav--closed .main-nav__list {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -134,7 +134,7 @@
   display: block;
   width: 100%;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     &:hover {
       background-color: #669ec0;
     }
@@ -168,7 +168,7 @@
 }
 
 .main-nav--opened .main-nav__link {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding: 15px 50px;
 
     &:hover {
@@ -199,7 +199,7 @@
 }
 
 .main-nav--nojs {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     z-index: 3;
     position: absolute;
     top: 0;

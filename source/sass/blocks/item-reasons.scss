@@ -2,7 +2,7 @@
   @include list-reset;
   min-height: 115px;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     position: relative;
   }
 
@@ -24,7 +24,7 @@
 }
 
 .item-reasons--last {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding-bottom: 47px;
   }
 }
@@ -32,7 +32,7 @@
 .item-reasons__wrapper {
   width: 100%;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding: 32px 18px 0 66px;
   }
 
@@ -46,7 +46,7 @@
 }
 
 .item-reasons__image {
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     position: absolute;
     content: "";
     left: 18px;
@@ -73,7 +73,7 @@
   @include bold-text;
   text-align: center;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     text-align: start;
     margin: 0;
   }
@@ -96,7 +96,7 @@
   margin: 0;
   padding: 16px 0 0;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     text-align: start;
   }
 }

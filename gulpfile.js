@@ -10,7 +10,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import htmlmin from 'gulp-htmlmin';
 import svgo from 'gulp-svgo';
-import svgstore from 'gulp-svgstore';
+import { stacksvg } from 'gulp-stacksvg';
 import { deleteAsync }  from "del";
 
 // Styles
@@ -74,15 +74,12 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 };
 
-const sprite = () => {
+const makeStack = () => {
   return gulp.src('source/img/icons/*.svg')
-  .pipe(svgo())
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'));
-};
+    .pipe(svgo())
+    .pipe(stacksvg({ output: 'stack' }))
+    .pipe(gulp.dest('build/img'));
+}
 
 // copyImages
 
@@ -142,7 +139,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    makeStack,
     createWebp
   ),
 );
@@ -156,7 +153,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    makeStack,
     createWebp
   ),
   gulp.series(

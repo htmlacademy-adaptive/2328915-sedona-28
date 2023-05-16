@@ -1,5 +1,5 @@
 .main-footer__wrapper {
-  padding: 50px 82px 33px;
+  padding: 33px 82px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $dekstop-param) {
-    padding: 49px 119px 34px;
+    padding: 36px 119px;
   }
 }
 

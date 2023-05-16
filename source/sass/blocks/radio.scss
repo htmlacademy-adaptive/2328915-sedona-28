@@ -7,13 +7,14 @@
   flex-wrap: wrap;
   margin: 0 auto;
 
-  @media (max-width: $tablet-param) {
+  @media (max-width: 767px) {
     padding-bottom: 34px;
   }
 
   @media (min-width: $tablet-param) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 38px;
-    flex-direction: row;
     min-height: 108px;
     width: 100%;
     row-gap: 20px;
@@ -23,7 +24,8 @@
   @media (min-width: $dekstop-param) {
     padding: 0 53px;
     min-height: 80px;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 62px;
   }
 }
 
@@ -33,12 +35,10 @@
   display: flex;
 
   @media (min-width: $tablet-param) {
-    width: 50%;
     padding: 0 20px 0 59px;
   }
 
   @media (min-width: $dekstop-param) {
-    width: 29%;
     padding: 0 0 0 59px;
   }
 }
