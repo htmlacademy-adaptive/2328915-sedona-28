@@ -1,0 +1,104 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form__fieldset {
+  @include reset-indents;
+  width: 100%;
+  border: 0;
+
+  @media (max-width: 767px) {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 24px 0;
+  }
+}
+
+.form__fieldset:last-of-type {
+  @media (max-width: 767px) {
+    border-bottom: none;
+  }
+}
+
+.form__fieldset:first-child {
+  @media (min-width: $tablet-param) {
+    padding-right: 4px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-right: 50px;
+  }
+}
+
+.form__fieldset:nth-child(2) {
+  @media (min-width: $dekstop-param) {
+    padding-left: 50px;
+  }
+}
+
+.form__wrapper-button {
+  width: 280px;
+  padding-top: 47px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-param) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 43px;
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    justify-content: space-around;
+  }
+}
+
+.form__button {
+  @include button;
+  font-size: 18px;
+  min-width: 280px;
+  min-height: 58px;
+  padding: 0;
+
+  @media (min-width: $tablet-param) {
+    width: 324px;
+  }
+
+  @media (min-width: $dekstop-param) {
+    width: 384px;
+    margin-right: 30px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.form__small-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+  display: flex;
+  justify-content: flex-end;
+
+  @media (min-width: $tablet-param) {
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-top: 5px;
+  }
+}

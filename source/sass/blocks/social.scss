@@ -1,0 +1,33 @@
+.social__list {
+  @include reset-indents;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  min-width: 156px;
+}
+
+.social__item {
+  @include list-reset;
+  background-color: $blue-color;
+}
+
+
+.social__link {
+  color: #ffffff;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

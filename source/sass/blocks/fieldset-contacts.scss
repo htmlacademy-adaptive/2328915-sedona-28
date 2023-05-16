@@ -1,0 +1,83 @@
+.fieldset-contacts__title {
+  @include bold-text;
+
+  @media (max-width: 767px) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $tablet-param) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.fieldset-contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
+
+.fieldset-contacts__wrapper:last-child {
+  @media (max-width: 767px) {
+    padding-bottom: 34px;
+  }
+}
+
+
+.fieldset-contacts__icon {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  padding: 20px;
+  top: 41px;
+  right: 0;
+  background-color: #e6e6e6;
+
+  @media (min-width: $tablet-param) {
+    top: 49px;
+  }
+}
+
+.fieldset-contacts__label {
+  @include normal-text;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 16px;
+  display: flex;
+
+  @media (min-width: $tablet-param) {
+    padding-top: 28px;
+  }
+}
+
+.fieldset-contacts__input-number,
+.fieldset-contacts__input-email {
+  @include bold-text;
+  text-transform: lowercase;
+  text-align: start;
+  min-width: 280px;
+  width: 100%;
+  min-height: 58px;
+  border: 0;
+  background-color: #f2f2f2;
+  padding: 0 60px 0 16px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+}
+
+.fieldset-contacts__input-number::placeholder,
+.fieldset-contacts__input-email::placeholder {
+  @include bold-text;
+  text-align: start;
+  text-transform: initial;
+  color: rgba(0, 0, 0, 0.3);
+}

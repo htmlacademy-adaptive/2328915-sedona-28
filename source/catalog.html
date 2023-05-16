@@ -1,153 +1,255 @@
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body class="page__body">
-    <div class="container">
-      <header class="main-header">
-        <a class="main-header__logo">
-          <img src="./img/logo-phone.svg" width="185" height="96">
-          <h1 class="visually-hidden">Седона.</h1>
-        </a>
-        <nav class="main-header__nav main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <ul class="main-nav__list">
-            <h2 class="visually-hidden">Меню.</h2>
-            <li class="main-nav__item">
-              Главная
-              <span class="visually-hidden">Закрыть.</span>
-            </li>
-            <li class="main-nav__item">
-              Фото и видео
-            </li>
-            <li class="main-nav__item">
-              Форма отзыва
-            </li>
-            <li class="main-nav__item">
-              Html academy
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main-container">
-        <section class="hero">
-          <img class="hero__welcome" src="./img/sedona-form-hero.svg" alt="Седона." width="229" height="39">
-        </section>
-        <section class="catalog">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body class="page__body">
+  <div class="container">
+    <header class="main-header">
+      <a class="main-header__logo" href="./index.html">
+        <svg width="185" height="96">
+          <use xlink:href="img/stack.svg#logo" />
+        </svg>
+        <h1 class="visually-hidden">Седона.</h1>
+      </a>
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+        <h2 class="visually-hidden">Меню.</h2>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="./index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="./form.html" class="main-nav__link">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru" class="main-nav__link">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="hero hero--small">
+        <svg width="229" height="39">
+          <use xlink:href="img/stack.svg#sedona-short" />
+        </svg>
+      </section>
+      <section class="catalog">
+        <div class="catalog__wrapper">
           <h2 class="visually-hidden">Достопримечательности Седоны</h2>
-          <div class="catalog__wrapper">
+          <div class="catalog__text-wrapper">
             <h2 class="catalog__title">Фото и видео</h2>
-            <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+              о политике и экономике.</p>
           </div>
-          <ul class="catalog__list-card list-card">
-            <li class="list-card__item">
-              <div class="list-card__photo">
-                <img src="#" alt="" width="" height="">
-              </div>
-              <div class="list-card__text-wrapper">
-                <h3 class="list-card__title">Неродные просторы</h3>
-                <cite class="list-card__author">Автор фото: Борис</cite>
-              </div>
-              <div class="list-card__likes">
-                <img src="#" alt="" width="" height="">
-                <span class="list-card__count">1350</span>
-              </div>
-            </li>
-            <li class="list-card__item">
-              <div class="list-card__photo">
-                <img src="#" alt="" width="" height="">
-              </div>
-              <div class="list-card__text-wrapper">
-                <h3 class="list-card__title">Местная растительность</h3>
-                <cite class="list-card__author">Автор фото: Сергей</cite>
-              </div>
-              <div class="list-card__likes">
-                <img src="#" alt="" width="" height="">
-                <span class="list-card__count">143</span>
-              </div>
-            </li>
-            <li class="list-card__item">
-              <div class="list-card__photo">
-                <img src="#" alt="" width="" height="">
-              </div>
-              <div class="list-card__text-wrapper">
-                <h3 class="list-card__title">Дорога на север</h3>
-                <cite class="list-card__author">Автор фото: Петр</cite>
-              </div>
-              <div class="list-card__likes">
-                <img src="#" alt="" width="" height="">
-                <span class="list-card__count">96</span>
+          <ul class="catalog__list-card">
+            <li class="catalog__item-card item-card item-card--all-width">
+              <a href="#" class="item-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)"
+                    srcset="img/catalog/catalog-item1-dekstop.webp 1x, img/catalog/catalog-item1-dekstop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/catalog-item1-tablet.webp 1x, img/catalog/catalog-item1-tablet@2x.webp 2x">
+                  <source media="(min-width: 1280px)"
+                    srcset="img/catalog/catalog-item1-dekstop.jpg 1x, img/catalog/catalog-item1-dekstop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/catalog-item1-tablet.jpg 1x, img/catalog/catalog-item1-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/catalog/catalog-item1-mobile.webp 1x, img/catalog/catalog-item1-mobile@2x.webp 2x">
+                  <img src="img/catalog/catalog-item1-mobile.jpg" srcset="img/catalog/catalog-item1-mobile@2x.jpg 2x"
+                    width="280" height="280" alt="Неродные просторы.">
+                </picture>
+              </a>
+              <div class="item-card__wrapper">
+                <div class="item-card__text-wrapper">
+                  <h3 class="item-card__title">Неродные просторы</h3>
+                  <cite class="item-card__author">Автор фото: Борис</cite>
+                </div>
+                <a href="#" class="item-card__like">
+                  <svg width="23" height="21" role="Лайк.">
+                    <use xlink:href="img/stack.svg#icon-like" />
+                  </svg>
+                  <span class="item-card__count">1350</span>
+                </a>
               </div>
             </li>
-            <li class="list-card__item">
-              <div class="list-card__photo">
-                <img src="#" alt="" width="" height="">
+            <li class="catalog__item-card item-card">
+              <a href="#" class="item-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)"
+                    srcset="img/catalog/catalog-item2-dekstop.webp 1x, img/catalog/catalog-item2-dekstop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/catalog-item2-tablet.webp 1x, img/catalog/catalog-item2-tablet@2x.webp 2x">
+                  <source media="(min-width: 1280px)"
+                    srcset="img/catalog/catalog-item2-dekstop.jpg 1x, img/catalog/catalog-item2-dekstop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/catalog-item2-tablet.jpg 1x, img/catalog/catalog-item2-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/catalog/catalog-item2-mobile.webp 1x, img/catalog/catalog-item2-mobile@2x.webp 2x">
+                  <img src="img/catalog/catalog-item2-mobile.jpg" srcset="img/catalog/catalog-item2-mobile@2x.jpg 2x"
+                    width="280" height="280" alt="Местная растительность.">
+                </picture>
+              </a>
+              <div class="item-card__wrapper">
+                <div class="item-card__text-wrapper">
+                  <h3 class="item-card__title">Местная растительность</h3>
+                  <cite class="item-card__author">Автор фото: Сергей</cite>
+                </div>
+                <a href="#" class="item-card__like">
+                  <svg width="23" height="21" role="Лайк.">
+                    <use xlink:href="img/stack.svg#icon-like" />
+                  </svg>
+                  <span class="item-card__count">143</span>
+                </a>
               </div>
-              <div class="list-card__text-wrapper">
-                <h3 class="list-card__title">Мост дьявола</h3>
-                <cite class="list-card__author">Автор фото: Антон</cite>
+            </li>
+            <li class="catalog__item-card item-card">
+              <a href="#" class="item-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)"
+                    srcset="img/catalog/catalog-item3-dekstop.webp 1x, img/catalog/catalog-item3-dekstop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/catalog-item3-tablet.webp 1x, img/catalog/catalog-item3-tablet@2x.webp 2x">
+                  <source media="(min-width: 1280px)"
+                    srcset="img/catalog/catalog-item3-dekstop.jpg 1x, img/catalog/catalog-item3-dekstop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/catalog-item3-tablet.jpg 1x, img/catalog/catalog-item3-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/catalog/catalog-item3-mobile.webp 1x, img/catalog/catalog-item3-mobile@2x.webp 2x">
+                  <img src="img/catalog/catalog-item3-mobile.jpg" srcset="img/catalog/catalog-item3-mobile@2x.jpg 2x"
+                    width="280" height="280" alt="Дорога на север.">
+                </picture>
+              </a>
+              <div class="item-card__wrapper">
+                <div class="item-card__text-wrapper">
+                  <h3 class="item-card__title">Дорога на север</h3>
+                  <cite class="item-card__author">Автор фото: Петр</cite>
+                </div>
+                <a href="#" class="item-card__like">
+                  <svg width="23" height="21" role="Лайк.">
+                    <use xlink:href="img/stack.svg#icon-like" />
+                  </svg>
+                  <span class="item-card__count">96</span>
+                </a>
               </div>
-              <div class="list-card__likes">
-                <img src="#" alt="" width="" height="">
-                <span class="list-card__count">254</span>
+            </li>
+            <li class="catalog__item-card item-card">
+              <a href="#" class="item-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)"
+                    srcset="img/catalog/catalog-item4-dekstop.webp 1x, img/catalog/catalog-item4-dekstop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/catalog-item4-tablet.webp 1x, img/catalog/catalog-item4-tablet@2x.webp 2x">
+                  <source media="(min-width: 1280px)"
+                    srcset="img/catalog/catalog-item4-dekstop.jpg 1x, img/catalog/catalog-item4-dekstop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/catalog-item4-tablet.jpg 1x, img/catalog/catalog-item4-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/catalog/catalog-item4-mobile.webp 1x, img/catalog/catalog-item4-mobile@2x.webp 2x">
+                  <img src="img/catalog/catalog-item4-mobile.jpg" srcset="img/catalog/catalog-item4-mobile@2x.jpg 2x"
+                    width="280" height="280" alt="Мост дьявола.">
+                </picture>
+              </a>
+              <div class="item-card__wrapper">
+                <div class="item-card__text-wrapper">
+                  <h3 class="item-card__title">Мост дьявола</h3>
+                  <cite class="item-card__author">Автор фото: Антон</cite>
+                </div>
+                <a href="#" class="item-card__like">
+                  <svg width="23" height="21" role="Лайк.">
+                    <use xlink:href="img/stack.svg#icon-like" />
+                  </svg>
+                  <span class="item-card__count">254</span>
+                </a>
               </div>
             </li>
           </ul>
-        </section>
-        <section class="video-prs">
-          <h2 class="visually-hidden">Видеопрезентация Седоны.</h2>
-          <div class="video-prs__doubt">
-            <h2 class="video-prs__title">Все еще сомневаетесь?</h2>
-            <p class="video-prs__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+      </section>
+      <section class="video-player">
+        <h2 class="visually-hidden">Видеопрезентация Седоны.</h2>
+        <div class="video-player__doubt">
+          <div class="video-player__wrapper">
+            <h2 class="video-player__title">Все еще сомневаетесь?</h2>
+            <p class="video-player__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+              в
+              очередной раз!</p>
           </div>
-          <div class="video-prs__player player">
-            <a class="player__link" href="#">
-              <img src="#" alt="" width="" height="">
-              <span class="player__play"></span>
+          <div class="video-player__link-wrapper">
+            <a class="video-player__link" href="https://www.youtube.com/watch?v=gA6pxmdMiOQ">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/video-player/video-player-desktop.webp"
+                  srcset="img/video-player/video-player-desktop@2x.webp">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/video-player/video-player-tablet.webp 1x, img/video-player/video-player-tablet@2x.webp 2x">
+                <source media="(min-width: 1280px)"
+                  srcset="img/video-player/video-player-desktop.jpg 1x, img/video-player/video-player-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/video-player/video-player-tablet.jpg 1x, img/video-player/video-player-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/video-player/video-player-mobile.webp 1x, img/video-player/video-player-mobile@2x.webp 2x">
+                <img src="img/video-player/video-player-mobile.jpg"
+                  srcset="img/video-player/video-player-mobile@2x.jpg 2x" alt="Презентация Седоны." width="280"
+                  height="177">
+              </picture>
             </a>
           </div>
-        </section>
-      </main>
-      <footer class="main-footer">
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
         <h2 class="main-footer__title">#visitsedona</h2>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte">
-                <span class="visually-hidden">Вконтакте.</span>
-                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="white"/>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg width="24" height="14" role="Вконтакте.">
+                  <use xlink:href="img/stack.svg#icon-vk" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram">
-                <span class="visually-hidden">Телеграм.</span>
-                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <svg width="24" height="17" role="Телеграм.">
+                  <use xlink:href="img/stack.svg#icon-tg" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube">
-                <span class="visually-hidden">Ютуб.</span>
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" fill="white"/>
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="20" height="14" role="Ютуб.">
+                  <use xlink:href="img/stack.svg#icon-youtube" />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
+        <a href="https://htmlacademy.ru" class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z" fill="black"/>
+          <svg width="27" height="34" role="Логотип Html-academy.">
+            <use xlink:href="img/stack.svg#icon-academy" />
           </svg>
-        </div>
-      </footer>
-    </div>
-  </body>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

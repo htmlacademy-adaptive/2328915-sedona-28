@@ -1,0 +1,44 @@
+.textarea {
+  @include bold-text;
+  text-transform: lowercase;
+  text-align: start;
+  background-color: #f2f2f2;
+  width: 100%;
+  min-height: 150px;
+  border: 0;
+  resize: none;
+
+  @media (min-width: $tablet-param) {
+    width: 648px;
+    min-height: 160px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $dekstop-param) {
+    width: 768px;
+    margin-left: 96px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+
+  &::placeholder {
+    @include bold-text;
+    text-align: left;
+    text-transform: initial;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+}

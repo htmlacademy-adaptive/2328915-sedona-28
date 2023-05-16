@@ -1,0 +1,62 @@
+.sedona-map__wrapper {
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-param) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $dekstop-param) {
+    padding-bottom: 13px;
+  }
+}
+
+.sedona-map__iframe {
+  width: 100%;
+  display: block;
+  height: 350px;
+  border: 0;
+}
+
+.sedona-map__image {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.sedona-map__image--no-js {
+  display: block;
+}
+
+.sedona-map__iframe--no-js {
+  display: none;
+}
+
+
+.sedona-map__image img {
+  display: block;
+  width: 100%;
+}
+
+.sedona-map__image::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.sedona-map__image::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #81b3d3;
+  left: 50%;
+  top: 51.5%;
+  transform: translate(-50%);
+}
