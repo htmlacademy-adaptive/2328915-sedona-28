@@ -1,14 +1,14 @@
 .social__list {
   @include reset-indents;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 6px;
-  justify-content: center;
-  min-width: 156px;
+  width: 156px;
 }
 
 .social__item {
   @include list-reset;
+  width: 48px;
   background-color: $blue-color;
 }
 

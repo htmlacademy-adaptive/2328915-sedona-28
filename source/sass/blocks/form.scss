@@ -4,6 +4,27 @@
   justify-content: center;
 }
 
+.form__wrapper {
+  @media (min-width: $tablet-param) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.form__wrapper::before {
+  @media (min-width: $tablet-param) {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #d8d8d8;
+    right: 50%;
+    top: 0;
+  }
+}
+
 .form__fieldset {
   @include reset-indents;
   width: 100%;
@@ -31,7 +52,7 @@
   }
 }
 
-.form__fieldset:nth-child(2) {
+.form__wrapper .form__fieldset:nth-child(2n) {
   @media (min-width: $dekstop-param) {
     padding-left: 50px;
   }
