@@ -60,49 +60,53 @@
               посещенных вами достопримечательностях</p>
           </header>
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="form__fieldset fieldset fieldset__text">
-              <legend class="fieldset__title">Представьтесь:</legend>
-              <div class="fieldset__wrapper--left">
-                <div class="fieldset__field field-text">
-                  <label class="field-text__label" for="username">Имя*:</label>
-                  <input class="field-text__input" type="text" id="username" name="username" placeholder="Пётр" required>
+            <div class="form__wrapper">
+              <fieldset class="form__fieldset fieldset fieldset__text">
+                <legend class="fieldset__title">Представьтесь:</legend>
+                <div class="fieldset__wrapper--left">
+                  <div class="fieldset__field field-text">
+                    <label class="field-text__label" for="username">Имя*:</label>
+                    <input class="field-text__input" type="text" id="username" name="username" placeholder="Пётр"
+                      required>
+                  </div>
+                  <div class="fieldset__field field-text">
+                    <label class="field-text__label" for="surname">Фамилия*:</label>
+                    <input class="field-text__input" type="text" id="surname" name="surname" placeholder="Пустота"
+                      required>
+                  </div>
+                  <div class="fieldset__field field-text">
+                    <label class="field-text__label" for="patronymic">Отчество:</label>
+                    <input class="field-text__input" type="text" id="patronymic" name="patronymic"
+                      placeholder="Викторович" required>
+                  </div>
                 </div>
-                <div class="fieldset__field field-text">
-                  <label class="field-text__label" for="surname">Фамилия*:</label>
-                  <input class="field-text__input" type="text" id="surname" name="surname" placeholder="Пустота" required>
-                </div>
-                <div class="fieldset__field field-text">
-                  <label class="field-text__label" for="patronymic">Отчество:</label>
-                  <input class="field-text__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович"
-                    required>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="form__fieldset fieldset fieldset__text">
-              <legend class="fieldset__title">Контактная информация:</legend>
-              <div class="fieldset__wrapper--right">
-                <div class="fieldset__field field-text">
-                  <label class="field-text__label" for="number">Контактный телефон*:</label>
-                  <div class="field-text__wrapper">
-                    <input class="field-text__input field-text__input--image" id="number" type="tel"
-                      placeholder="Введите телефон" required>
-                    <div class="field-text__image field-text__image--phone">
-                      <span class="visually-hidden">Изображение почты</span>
+              </fieldset>
+              <fieldset class="form__fieldset fieldset fieldset__text">
+                <legend class="fieldset__title">Контактная информация:</legend>
+                <div class="fieldset__wrapper--right">
+                  <div class="fieldset__field field-text">
+                    <label class="field-text__label" for="number">Контактный телефон*:</label>
+                    <div class="field-text__wrapper">
+                      <input class="field-text__input field-text__input--image" id="number" type="tel"
+                        placeholder="Введите телефон" required>
+                      <div class="field-text__image field-text__image--phone">
+                        <span class="visually-hidden">Изображение почты</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fieldset__field field-text">
+                    <label class="field-text__label" for="email">Электронная почта*:</label>
+                    <div class="field-text__wrapper">
+                      <input class="field-text__input field-text__input--image" id="email" type="email"
+                        placeholder="Введите e-mail" required>
+                      <div class="field-text__image field-text__image--mail">
+                        <span class="visually-hidden">Изображение почты</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="fieldset__field field-text">
-                  <label class="field-text__label" for="email">Электронная почта*:</label>
-                  <div class="field-text__wrapper">
-                    <input class="field-text__input field-text__input--image" id="email" type="email"
-                      placeholder="Введите e-mail" required>
-                    <div class="field-text__image field-text__image--mail">
-                      <span class="visually-hidden">Изображение почты</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
             <fieldset class="form__fieldset fieldset fieldset__radio--line">
               <legend class="fieldset__title fieldset__title-radio">Ваше общее впечатление:</legend>
               <ul class="fieldset__radio radio">

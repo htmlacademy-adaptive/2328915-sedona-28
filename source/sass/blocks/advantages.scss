@@ -146,7 +146,7 @@
 
 .advantages__item--all-str-reverse .advantages__description {
   @media (min-width: $dekstop-param) {
-    padding: 0 50px 18px;
+    padding: 0 40px 18px;
   }
 }
 
@@ -159,7 +159,7 @@
 
   @media (min-width: $tablet-param) {
     width: calc(100% / 3);
-    padding: 37px 33px 17px;
+    padding: 37px 50px 17px;
   }
 }
 
@@ -226,6 +226,7 @@
     height: 37px;
     width: 100%;
     background-image: url("../img/triangle.svg");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     left: 0;
     top: 0;
@@ -238,13 +239,13 @@
 
   @media (min-width: $tablet-param) {
     width: calc(100% / 3 * 2);
-    height: 100%;
   }
 }
 
 .advantages__image img {
   display: block;
   width: 100%;
+  height: 100%;
 
   @media (min-width: $tablet-param) {
     min-height: 256px;
