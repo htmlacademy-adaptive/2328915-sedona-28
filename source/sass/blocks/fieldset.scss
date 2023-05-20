@@ -5,9 +5,9 @@
   position: relative;
 }
 
-.fieldset__wrapper--left {
+.fieldset__wrapper-left {
   @media (min-width: $tablet-param) {
-    padding-right: 40px;
+    padding-right: 24px;
   }
 
   @media (min-width: $dekstop-param) {
@@ -15,9 +15,9 @@
   }
 }
 
-.fieldset__wrapper--right {
+.fieldset__wrapper-right {
   @media (min-width: $tablet-param) {
-    padding-left: 43px;
+    padding-left: 29px;
   }
 
   @media (min-width: $dekstop-param) {
@@ -25,7 +25,7 @@
   }
 }
 
-.fieldset__text .fieldset__field:first-of-type {
+.fieldset--text .fieldset__field:first-of-type {
   @media (min-width: $tablet-param) {
     padding-top: 13px;
   }
@@ -39,7 +39,7 @@
   }
 }
 
-.fieldset__radio--line::after {
+.fieldset--line::after {
   @media (min-width: $tablet-param) {
     position: absolute;
     content: "";
@@ -56,7 +56,7 @@
   }
 }
 
-.fieldset__radio--line::before {
+.fieldset--line::before {
   @media (min-width: $tablet-param) {
     position: absolute;
     content: "";
@@ -74,7 +74,7 @@
 }
 
 
-.fieldset__checkbox--line::after {
+.fieldset--checkbox-line::after {
   @media (min-width: $tablet-param) {
     position: absolute;
     content: "";
@@ -91,7 +91,7 @@
   }
 }
 
-.fieldset__checkbox--line::before {
+.fieldset--checkbox-line::before {
   @media (min-width: $tablet-param) {
     position: absolute;
     content: "";
@@ -108,7 +108,7 @@
   }
 }
 
-.fieldset__textarea--line::after {
+.fieldset--textarea-line::after {
   @media (min-width: $tablet-param) {
     position: absolute;
     content: "";
@@ -124,7 +124,7 @@
   }
 }
 
-.fieldset__textarea--line::before {
+.fieldset--textarea-line::before {
   @media (min-width: $tablet-param) {
     position: absolute;
     content: "";
@@ -140,7 +140,7 @@
   }
 }
 
-.fieldset__text {
+.fieldset--text {
   @media (max-width: 767px) {
     padding: 0 20px;
     border-bottom: 1px solid #e5e5e5;
@@ -158,6 +158,7 @@
 
 .fieldset__title {
   @include bold-text;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     padding-top: 24px;

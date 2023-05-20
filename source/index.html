@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -30,16 +30,28 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Главная</a>
+            <a href="./index.html" class="main-nav__link main-nav__link--active">
+              <span class="visually-hidden">Главная.</span>
+              Главная
+            </a>
           </li>
           <li class="main-nav__item">
-            <a href="./catalog.html" class="main-nav__link">Фото и видео</a>
+            <a href="./catalog.html" class="main-nav__link">
+              <span class="visually-hidden">Фото и видео.</span>
+              Фото и видео
+            </a>
           </li>
           <li class="main-nav__item">
-            <a href="./form.html" class="main-nav__link">Форма отзыва</a>
+            <a href="./form.html" class="main-nav__link">
+              <span class="visually-hidden">Форма отзыва.</span>
+              Форма отзыва
+            </a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/" class="main-nav__link">Html academy</a>
+            <a href="https://htmlacademy.ru" class="main-nav__link">
+              <span class="visually-hidden">Html academy</span>
+              Html academy
+            </a>
           </li>
         </ul>
       </nav>
@@ -47,6 +59,7 @@
 
     <main class="main-container">
       <section class="hero">
+        <h2 class="visually-hidden">Заглавное фото Седоны.</h2>
         <div class="hero__wrapper">
           <svg width="282" height="214">
             <use xlink:href="img/stack.svg#sedona" />
@@ -69,13 +82,13 @@
               <p class="advantages__description">Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
             </div>
             <a href="#" class="advantages__image">
-              <h2 class="visually-hidden">Пейзаж Седоны</h2>
+              <h2 class="visually-hidden">Пейзаж Седоны.</h2>
               <picture>
-                <source type="image/webp" media="(min-width: 1280px)"
+                <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/advantage/advantage1-dekstop.webp 1x, img/advantage/advantage1-dekstop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/advantage/advantage1-tablet.webp 1x, img/advantage/advantage1-tablet@2x.webp 2x">
-                <source media="(min-width: 1280px)"
+                <source media="(min-width: 1200px)"
                   srcset="img/advantage/advantage1-dekstop.jpg 1x, img/advantage/advantage1-dekstop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/advantage/advantage1-tablet.jpg 1x, img/advantage/advantage1-tablet@2x.jpg 2x">
@@ -135,13 +148,13 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <a href="#" class="advantages__image">
-              <h2 class="visually-hidden">Пейзаж Седоны</h2>
+              <h2 class="visually-hidden">Пейзаж Седоны.</h2>
               <picture>
-                <source type="image/webp" media="(min-width: 1280px)"
+                <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/advantage/advantage2-dekstop.webp 1x, img/advantage/advantage2-dekstop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/advantage/advantage2-tablet.webp 1x, img/advantage/advantage2-tablet@2x.webp 2x">
-                <source media="(min-width: 1280px)"
+                <source media="(min-width: 1200px)"
                   srcset="img/advantage/advantage2-dekstop.jpg 1x, img/advantage/advantage2-dekstop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/advantage/advantage2-tablet.jpg 1x, img/advantage/advantage2-tablet@2x.jpg 2x">
@@ -153,17 +166,21 @@
             </a>
           </li>
           <li class="advantages__item">
-            <div class="advantages__wrapper">
-              <h2 class="advantages__title">Небольшая площадь</h2>
-              <span class="advantages__number">— №3 —</span>
-              <p class="advantages__description">Вcе интересные места находятся очень близко</p>
+            <div class="advantages__wrapper-indents">
+              <div class="advantages__wrapper">
+                <h2 class="advantages__title">Небольшая площадь</h2>
+                <span class="advantages__number">— №3 —</span>
+                <p class="advantages__description">Вcе интересные места находятся очень близко</p>
+              </div>
             </div>
           </li>
           <li class="advantages__item">
-            <div class="advantages__wrapper advantages__wrapper--center">
-              <h2 class="advantages__title">Красивая дорога</h2>
-              <span class="advantages__number">— №4 —</span>
-              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="advantages__wrapper-indents">
+              <div class="advantages__wrapper advantages__wrapper--center advantages__wrapper--line">
+                <h2 class="advantages__title">Красивая дорога</h2>
+                <span class="advantages__number">— №4 —</span>
+                <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </div>
           </li>
           <li class="advantages__item">
@@ -189,11 +206,11 @@
           <h2 class="visually-hidden">Расположение Седоны.</h2>
           <a href="#" class="sedona-map__image sedona-map__image--no-js">
             <picture>
-              <source type="image/webp" media="(min-width: 1280px)"
+              <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/sedona-map/sedona-map-desktop.webp 1x, img/sedona-map/sedona-map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/sedona-map/sedona-map-tablet.webp 1x, img/sedona-map/sedona-map-tablet@2x.webp 2x">
-              <source media="(min-width: 1280px)"
+              <source media="(min-width: 1200px)"
                 srcset="img/sedona-map/sedona-map-dekstop.jpg 1x, img/img/sedona-map/sedona-map-dekstop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/sedona-map/sedona-map-tablet.jpg 1x, img/sedona-map/sedona-map-tablet@2x.jpg 2x">
@@ -217,30 +234,34 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
-                <svg width="24" height="14" role="Вконтакте.">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg width="24" height="14">
                   <use xlink:href="img/stack.svg#icon-vk" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
-                <svg width="24" height="17" role="Телеграм.">
+                <span class="visually-hidden">Телеграм.</span>
+                <svg width="24" height="17">
                   <use xlink:href="img/stack.svg#icon-tg" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg width="20" height="14" role="Ютуб.">
+                <span class="visually-hidden">Ютуб.</span>
+                <svg width="20" height="14">
                   <use xlink:href="img/stack.svg#icon-youtube" />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <a href="https://htmlacademy.ru" class="main-footer__copyright copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <svg width="27" height="34" role="Логотип Html-academy.">
+          <span class="visually-hidden">Логотип Html-academy.</span>
+          <svg width="27" height="34">
             <use xlink:href="img/stack.svg#icon-academy" />
           </svg>
         </a>

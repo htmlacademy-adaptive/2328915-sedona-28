@@ -6,14 +6,11 @@
   justify-content: center;
 
   @media (min-width: $tablet-param) {
-    padding: 0;
+    padding: 62px 0 35px;
     min-height: 330px;
     max-width: 458px;
     margin: 0 auto -12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
   }
 }
 
@@ -60,6 +57,7 @@
   width: 284px;
 
   @media (min-width: $tablet-param) {
+    display: block;
     width: 458px;
     padding: 15px 100px 0;
   }

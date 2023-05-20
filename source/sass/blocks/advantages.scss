@@ -110,6 +110,7 @@
 
 .advantages__list {
   @include reset-indents;
+  background-color: #eeeeee;
 
   @media (min-width: $tablet-param) {
     display: flex;
@@ -159,6 +160,10 @@
 
   @media (min-width: $tablet-param) {
     width: calc(100% / 3);
+    padding: 37px 30px 17px;
+  }
+
+  @media (min-width: $dekstop-param) {
     padding: 37px 50px 17px;
   }
 }
@@ -201,7 +206,23 @@
   }
 }
 
-.advantages__wrapper--center {
+.advantages__wrapper-indents {
+  @media (max-width: 767px) {
+    padding: 0 20px;
+    background-color: #eeeeee;
+  }
+}
+
+.advantages__wrapper-indents .advantages__wrapper {
+  @media (max-width: 767px) {
+    padding: 0;
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+
+.advantages__wrapper-indents .advantages__wrapper--center {
+  padding: 0 35px;
+
   @media (min-width: $tablet-param) {
     padding: 33px 45px 33px;
   }

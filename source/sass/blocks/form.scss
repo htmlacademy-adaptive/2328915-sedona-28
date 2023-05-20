@@ -5,10 +5,11 @@
 }
 
 .form__wrapper {
+  width: 100%;
+
   @media (min-width: $tablet-param) {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     position: relative;
   }
 }
@@ -78,7 +79,7 @@
 
 .form__button {
   @include button;
-  font-size: 18px;
+  font-size: 21px;
   min-width: 280px;
   min-height: 58px;
   padding: 0;
