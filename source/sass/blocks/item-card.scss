@@ -69,6 +69,12 @@
   }
 }
 
+.item-card__like--last {
+  @media (max-width: 767px) {
+    padding-bottom: 45px;
+  }
+}
+
 .item-card__author {
   @include normal-text;
   font-style: normal;

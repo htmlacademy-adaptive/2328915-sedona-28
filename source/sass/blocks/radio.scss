@@ -69,6 +69,10 @@
   background-color: #e5e5e5;
 }
 
+.radio__input:focus + .radio__option::after {
+  outline: 3px solid #83b3d3;
+}
+
 .radio__label:active .radio__option::after {
   background-color: #d5d5d5;
 }

@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -17,6 +18,7 @@
   <div class="container">
     <header class="main-header">
       <a class="main-header__logo" href="./index.html">
+        <span class="visually-hidden">Логотип Седоны.</span>
         <svg width="185" height="96">
           <use xlink:href="img/stack.svg#logo" />
         </svg>
@@ -29,22 +31,35 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="./index.html" class="main-nav__link">Главная</a>
+            <a href="./index.html" class="main-nav__link">
+              <span class="visually-hidden">Главная.</span>
+              Главная
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Фото и видео</a>
+            <a class="main-nav__link main-nav__link--active">
+              <span class="visually-hidden">Фото и видео.</span>
+              Фото и видео
+            </a>
           </li>
           <li class="main-nav__item">
-            <a href="./form.html" class="main-nav__link">Форма отзыва</a>
+            <a href="./form.html" class="main-nav__link">
+              <span class="visually-hidden">Форма отзыва.</span>
+              Форма отзыва
+            </a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru" class="main-nav__link">Html academy</a>
+            <a href="https://htmlacademy.ru" class="main-nav__link">
+              <span class="visually-hidden">Html academy</span>
+              Html academy
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container">
       <section class="hero hero--small">
+        <h2 class="visually-hidden">Заглавное фото Седоны.</h2>
         <svg width="229" height="39">
           <use xlink:href="img/stack.svg#sedona-short" />
         </svg>
@@ -60,12 +75,13 @@
           <ul class="catalog__list-card">
             <li class="catalog__item-card item-card item-card--all-width">
               <a href="#" class="item-card__photo">
+                <span class="visually-hidden">Фото неродных просторов.</span>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1280px)"
+                  <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-item1-dekstop.webp 1x, img/catalog/catalog-item1-dekstop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/catalog/catalog-item1-tablet.webp 1x, img/catalog/catalog-item1-tablet@2x.webp 2x">
-                  <source media="(min-width: 1280px)"
+                  <source media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-item1-dekstop.jpg 1x, img/catalog/catalog-item1-dekstop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/catalog-item1-tablet.jpg 1x, img/catalog/catalog-item1-tablet@2x.jpg 2x">
@@ -81,7 +97,8 @@
                   <cite class="item-card__author">Автор фото: Борис</cite>
                 </div>
                 <a href="#" class="item-card__like">
-                  <svg width="23" height="21" role="Лайк.">
+                  <span class="visually-hidden">Лайк.</span>
+                  <svg width="23" height="21">
                     <use xlink:href="img/stack.svg#icon-like" />
                   </svg>
                   <span class="item-card__count">1350</span>
@@ -90,12 +107,13 @@
             </li>
             <li class="catalog__item-card item-card">
               <a href="#" class="item-card__photo">
+                <span class="visually-hidden">Фото местной растительности.</span>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1280px)"
+                  <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-item2-dekstop.webp 1x, img/catalog/catalog-item2-dekstop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/catalog/catalog-item2-tablet.webp 1x, img/catalog/catalog-item2-tablet@2x.webp 2x">
-                  <source media="(min-width: 1280px)"
+                  <source media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-item2-dekstop.jpg 1x, img/catalog/catalog-item2-dekstop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/catalog-item2-tablet.jpg 1x, img/catalog/catalog-item2-tablet@2x.jpg 2x">
@@ -111,7 +129,8 @@
                   <cite class="item-card__author">Автор фото: Сергей</cite>
                 </div>
                 <a href="#" class="item-card__like">
-                  <svg width="23" height="21" role="Лайк.">
+                  <span class="visually-hidden">Лайк.</span>
+                  <svg width="23" height="21">
                     <use xlink:href="img/stack.svg#icon-like" />
                   </svg>
                   <span class="item-card__count">143</span>
@@ -120,12 +139,13 @@
             </li>
             <li class="catalog__item-card item-card">
               <a href="#" class="item-card__photo">
+                <span class="visually-hidden">Фото дороги на север.</span>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1280px)"
+                  <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-item3-dekstop.webp 1x, img/catalog/catalog-item3-dekstop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/catalog/catalog-item3-tablet.webp 1x, img/catalog/catalog-item3-tablet@2x.webp 2x">
-                  <source media="(min-width: 1280px)"
+                  <source media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-item3-dekstop.jpg 1x, img/catalog/catalog-item3-dekstop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/catalog-item3-tablet.jpg 1x, img/catalog/catalog-item3-tablet@2x.jpg 2x">
@@ -141,7 +161,8 @@
                   <cite class="item-card__author">Автор фото: Петр</cite>
                 </div>
                 <a href="#" class="item-card__like">
-                  <svg width="23" height="21" role="Лайк.">
+                  <span class="visually-hidden">Лайк.</span>
+                  <svg width="23" height="21">
                     <use xlink:href="img/stack.svg#icon-like" />
                   </svg>
                   <span class="item-card__count">96</span>
@@ -150,12 +171,13 @@
             </li>
             <li class="catalog__item-card item-card">
               <a href="#" class="item-card__photo">
+                <span class="visually-hidden">Фото моста дьявола.</span>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1280px)"
+                  <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-item4-dekstop.webp 1x, img/catalog/catalog-item4-dekstop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/catalog/catalog-item4-tablet.webp 1x, img/catalog/catalog-item4-tablet@2x.webp 2x">
-                  <source media="(min-width: 1280px)"
+                  <source media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-item4-dekstop.jpg 1x, img/catalog/catalog-item4-dekstop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/catalog-item4-tablet.jpg 1x, img/catalog/catalog-item4-tablet@2x.jpg 2x">
@@ -170,8 +192,9 @@
                   <h3 class="item-card__title">Мост дьявола</h3>
                   <cite class="item-card__author">Автор фото: Антон</cite>
                 </div>
-                <a href="#" class="item-card__like">
-                  <svg width="23" height="21" role="Лайк.">
+                <a href="#" class="item-card__like item-card__like--last">
+                  <span class="visually-hidden">Лайк.</span>
+                  <svg width="23" height="21">
                     <use xlink:href="img/stack.svg#icon-like" />
                   </svg>
                   <span class="item-card__count">254</span>
@@ -192,13 +215,13 @@
           </div>
           <div class="video-player__link-wrapper">
             <a class="video-player__link" href="https://www.youtube.com/watch?v=gA6pxmdMiOQ">
+              <span class="visually-hidden">Видеопрезентация Седоны.</span>
               <picture>
-                <source type="image/webp" media="(min-width: 1280px)"
-                  srcset="img/video-player/video-player-desktop.webp"
-                  srcset="img/video-player/video-player-desktop@2x.webp">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/video-player/video-player-desktop.webp 1x,img/video-player/video-player-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/video-player/video-player-tablet.webp 1x, img/video-player/video-player-tablet@2x.webp 2x">
-                <source media="(min-width: 1280px)"
+                <source media="(min-width: 1200px)"
                   srcset="img/video-player/video-player-desktop.jpg 1x, img/video-player/video-player-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/video-player/video-player-tablet.jpg 1x, img/video-player/video-player-tablet@2x.jpg 2x">
@@ -220,30 +243,34 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
-                <svg width="24" height="14" role="Вконтакте.">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg width="24" height="14">
                   <use xlink:href="img/stack.svg#icon-vk" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
-                <svg width="24" height="17" role="Телеграм.">
+                <span class="visually-hidden">Телеграм.</span>
+                <svg width="24" height="17">
                   <use xlink:href="img/stack.svg#icon-tg" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg width="20" height="14" role="Ютуб.">
+                <span class="visually-hidden">Ютуб.</span>
+                <svg width="20" height="14">
                   <use xlink:href="img/stack.svg#icon-youtube" />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <a href="https://htmlacademy.ru" class="main-footer__copyright copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <svg width="27" height="34" role="Логотип Html-academy.">
+          <span class="visually-hidden">Логотип Html-academy.</span>
+          <svg width="27" height="34">
             <use xlink:href="img/stack.svg#icon-academy" />
           </svg>
         </a>

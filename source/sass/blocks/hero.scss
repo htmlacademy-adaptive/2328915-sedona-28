@@ -64,6 +64,8 @@
 
 .hero--small {
   background-image: url("../img/hero/background-hero-small-mobile.webp");
+  background-position: 0 100%;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero/background-hero-small-mobile@2x.webp");
@@ -71,7 +73,6 @@
 
   min-height: 158px;
   width: 100%;
-  background-position: bottom;
   padding: 52px 0 63px;
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +82,7 @@
     background-image: url("../img/hero/background-hero-small-tablet.webp");
     min-height: 290px;
     padding: 93px 0 117px;
+    background-position: 0 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero/background-hero-small-tablet@2x.webp");

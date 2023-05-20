@@ -1,26 +1,14 @@
 .checkbox {
   @include reset-indents;
+  margin: 0 auto;
+}
+
+.checkbox__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   row-gap: 36px;
-  margin: 0 auto;
 
-  @media (min-width: $tablet-param) {
-    min-width: 480px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
-  }
-
-  @media (min-width: $dekstop-param) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 45px;
-  }
-}
-
-.checkbox__list {
   @media (max-width: 767px) {
     padding: 0 20px 34px;
     border-bottom: 1px solid #e5e5e5;
@@ -28,10 +16,17 @@
 
 
   @media (min-width: $tablet-param) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
     padding: 0 84px;
   }
 
   @media (min-width: $dekstop-param) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 45px;
   }
 }
@@ -79,6 +74,10 @@
   width: 22px;
   height: 16px;
   background-image: url("../img/tick.svg");
+}
+
+.checkbox__input:focus + .checkbox__option::after {
+  outline: 3px solid #83b3d3;
 }
 
 .checkbox__label:hover .checkbox__option::after {

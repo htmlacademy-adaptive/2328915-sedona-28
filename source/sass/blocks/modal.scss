@@ -81,7 +81,7 @@
 }
 
 .modal--error .modal__text-wrapper {
-  padding: 61px 42px 29px;
+  padding: 45px 42px 29px;
 
   @media (min-width: $tablet-param) {
     padding: 38px 10px 46px;
@@ -126,7 +126,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-param) {
-    font-size: 18px;
+    font-size: 21px;
     min-width: 272px;
     height: 58px;
     margin-bottom: 44px;
@@ -146,7 +146,7 @@
   }
 
   &--success {
-    margin: 20px;
+    margin: 21px 20px 67px;
     width: 100%;
 
     @media (min-width: $tablet-param) {
