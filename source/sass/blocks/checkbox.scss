@@ -1,9 +1,9 @@
 .checkbox {
-  @include reset-indents;
   margin: 0 auto;
 }
 
 .checkbox__list {
+  @include reset-indents;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
