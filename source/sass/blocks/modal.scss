@@ -16,7 +16,7 @@
 
 
 .modal--error {
-  display: none;
+  display: block;
 }
 
 .modal__wrapper {
@@ -106,11 +106,14 @@
 }
 
 .modal__wrapper-btn {
-  height: 98px;
+  padding: 20px;
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
-  min-height: 146px;
+
+  @media (min-width: $tablet-param) {
+    padding: 44px 0 44px;
+  }
 }
 
 .modal__text-wrapper {
@@ -146,8 +149,8 @@
   }
 
   &--success {
-    margin: 21px 20px 67px;
     width: 100%;
+    margin: 0;
 
     @media (min-width: $tablet-param) {
       margin: 0 90px;
